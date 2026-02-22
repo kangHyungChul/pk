@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>핀왕 - 쉽고 안전한 상품권 구매</title>
+  <!-- tokens.css, common.css 공통스타일 고정-->
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/common.css">
+  <!-- result.css 결과 페이지 스타일 -->
+  <link rel="stylesheet" href="css/result.css">
+</head>
+<body>
+
+  <!-- 헤더 -->
+  <header class="header">
+    <div class="page-width header__inner">
+      <h1 class="header__logo">
+        <a href="/" aria-label="핀왕 홈">
+          <img src="assets/logo.png" alt="핀왕" class="header__logo-img" width="120" height="40">
+        </a>
+      </h1>
+      <nav class="header__nav" aria-label="주 메뉴">
+        <ul class="header__nav-list">
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link">이용 가이드</a>
+            <ul class="header__dropdown">
+              <li><a href="#">구매안내</a></li>
+              <li><a href="#">상품권 확인</a></li>
+              <li><a href="#">취소안내</a></li>
+              <li><a href="#">사용처</a></li>
+            </ul>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link">고객센터</a>
+            <ul class="header__dropdown">
+              <li><a href="#">공지사항</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__actions">
+        <a href="#" class="c-btn header__btn-join">회원가입</a>
+        <a href="#" class="header__link-login">로그인</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="result">
+
+    <!-- 주문완료 -->
+    <div class="page-width result__inner">
+      <h2 class="result__title">상품권 결제가 완료되었습니다.</h2>
+
+      <div class="result__card">
+
+        <div class="result__card-inner">
+          <dl class="result__list">
+            <div class="result__row">
+              <dt class="result__label">상품권</dt>
+              <dd class="result__value">컬쳐랜드 상품권 1매</dd>
+            </div>
+            <div class="result__row">
+              <dt class="result__label">결제수단</dt>
+              <dd class="result__value">신용카드</dd>
+            </div>
+            <div class="result__row">
+              <dt class="result__label">결제금액</dt>
+              <dd class="result__value">50,000원</dd>
+            </div>
+            <div class="result__row">
+              <dt class="result__label">수신 휴대폰 번호</dt>
+              <dd class="result__value result__value--phone">01011112222</dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="result__card-actions">
+          <a href="#" class="c-btn is-disabled">구매내역으로</a>
+          <a href="#" class="c-btn">확인</a>
+        </div>
+        
+      </div>
+    </div>
+
+    <!-- 주문실패 -->
+    <!--
+    <div class="page-width result__inner">
+      <h2 class="result__title">상품권 결제가 실패되었습니다.</h2>
+
+      <div class="result__card">
+
+        <div class="result__card-inner">
+          <p class="result__card-fail">실패사유: 카드 승인 거절</p>
+        </div>
+
+        <div class="result__card-actions">
+          <a href="#" class="c-btn is-disabled">이전으로</a>
+          <a href="#" class="c-btn">확인</a>
+        </div>
+        
+      </div>
+    </div>
+    -->
+
+  </main>
+
+  <!-- 푸터 -->
+  <footer class="footer">
+    <div class="footer__top page-width">
+      <a href="#" class="footer__link">이용약관</a>
+      <a href="#" class="footer__link">개인정보처리방침</a>
+    </div>
+    <div class="footer__bottom">
+      <div class="page-width footer__inner">
+        <img src="https://www.figma.com/api/mcp/asset/38f97d22-8392-4234-b811-5b36643c1f01" alt="핀왕" class="footer__logo" width="120" height="40">
+        <div class="footer__info">
+          <p class="footer__text">(주)호라이즌테크놀러지 | 대표: 김경호  | 대표번호 1670-2983 평일 10:00 ~ 17:00 (점심시간 12:30 ~ 13:30) / 공휴일 휴무</p>
+          <p class="footer__text">주소: 서울특별시 강서구 양천로 583, B동 1101호 (염창동, 우림블루나인센터)</p>
+          <p class="footer__text">사업자등록번호: 220-86-93669 통신판매신고번호: 2018-서울강서-0830호</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

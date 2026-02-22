@@ -1,0 +1,155 @@
+/* 주문완료 페이지 */
+
+.result {
+  background-color: #f8f8f8;
+  padding: 60px 0 80px;
+  min-height: 60vh;
+}
+
+.result__inner {
+  padding: 80px 40px 160px;
+  background-color: var(--color-bg-white);
+}
+
+/* 완료 문구  */
+.result__title {
+  margin-bottom: 60px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1;
+  color: var(--color-text-main);
+  text-align: center;
+}
+
+/* 결제 정보 카드 */
+.result__card {
+  max-width: 860px;
+  margin: 0 auto 40px;
+  background-color: var(--color-bg-white);
+}
+
+.result__card-inner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 40px 50px;
+  border: 1px solid var(--color-bg-line);
+  border-radius: 10px;
+}
+
+.result__list {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.result__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.result__label {
+  flex: 0 0 180px;
+  margin: 0;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1;
+  color: var(--color-gray-500);
+  padding: 20px 16px 20px 0;
+  margin-right: 16px;
+  border-right: 1px solid var(--color-bg-line);
+}
+.result__row:first-child .result__label {
+  padding-top: 0;
+}
+.result__row:last-child .result__label {
+  padding-bottom: 0;
+}
+
+.result__card-fail {
+  display: flex;
+  margin: 0 auto;
+  gap: 6px;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-gray-500)
+}
+
+.result__card-fail::before {
+  width: 34px;
+  height: 34px;
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none"><path d="M17.0004 17V10.2M17.0004 22.0403V22.1M30.6004 17C30.6004 24.5111 24.5115 30.6 17.0004 30.6C9.48932 30.6 3.40039 24.5111 3.40039 17C3.40039 9.48895 9.48932 3.40002 17.0004 3.40002C24.5115 3.40002 30.6004 9.48895 30.6004 17Z" stroke="%23FF3838" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  content: '';
+}
+
+.result__value {
+  flex: 1;
+  margin: 0;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 32px;
+  color: var(--color-gray-500);
+  text-align: right;
+}
+
+.result__value--phone {
+  font-size: 24px;
+  line-height: 34px;
+}
+
+/* 하단 버튼 영역 (구매내역으로 / 확인) */
+.result__card-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.result__card-actions .c-btn {
+  flex: 1;
+}
+/* 
+@media (max-width: 560px) {
+  .result__title {
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+
+  .result__card {
+    padding: 24px 20px;
+  }
+
+  .result__list::before {
+    display: none;
+  }
+
+  .result__row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .result__label {
+    flex: none;
+  }
+
+  .result__value {
+    text-align: left;
+  }
+
+  .result__actions {
+    flex-direction: column;
+  }
+
+  .result__btn {
+    width: 100%;
+  }
+} */

@@ -1,0 +1,9 @@
+{
+  "plugins": {
+    "figma": {
+      "enabled": true
+    }
+  },
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true
+}

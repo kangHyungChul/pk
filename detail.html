@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>핀왕 - 쉽고 안전한 상품권 구매</title>
+  <!-- tokens.css, common.css 공통스타일 고정-->
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/common.css">
+  <!-- detail.css 상품상세 스타일 -->
+  <link rel="stylesheet" href="css/detail.css">
+</head>
+<body>
+
+  <!-- 헤더 -->
+  <header class="header">
+    <div class="page-width header__inner">
+      <h1 class="header__logo">
+        <a href="/" aria-label="핀왕 홈">
+          <img src="assets/logo.png" alt="핀왕" class="header__logo-img" width="120" height="40">
+        </a>
+      </h1>
+      <nav class="header__nav" aria-label="주 메뉴">
+        <ul class="header__nav-list">
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link">이용 가이드</a>
+            <ul class="header__dropdown">
+              <li><a href="#">구매안내</a></li>
+              <li><a href="#">상품권 확인</a></li>
+              <li><a href="#">취소안내</a></li>
+              <li><a href="#">사용처</a></li>
+            </ul>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link">고객센터</a>
+            <ul class="header__dropdown">
+              <li><a href="#">공지사항</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__actions">
+        <a href="#" class="c-btn header__btn-join">회원가입</a>
+        <a href="#" class="header__link-login">로그인</a>
+      </div>
+    </div>
+  </header>
+  <!--  상품 상세 본문 -->
+  <main class="detail">
+    <div class="page-width detail__inner">
+
+      <div class="detail__grid">
+        <!-- 좌측: 상품명, 이미지, 구매 전 확인 -->
+        <div class="detail__left">
+          <h2 class="detail__title">컬쳐랜드 상품권</h2>
+          <div class="detail__thumb"></div>
+          <section class="detail__section">
+            <h3 class="detail__section-title">구매 전 확인</h3>
+            <div class="detail__section-body">
+              <p>•로렘 입숨(lorem ipsum; 줄여서 립숨, lipsum)은 출판이나 그래픽 디자인 분야에서 폰트, 타이포그래피,</p>
+              <p>•레이아웃 같은 그래픽 요소나 시각적 연출을 보여줄 때 사용하는 표준 채우기 텍스트로,</p>
+            </div>
+          </section>
+        </div>
+
+        <!-- 우측: 결제 수단 탭, 구매 수량, 결제 금액, 동의, 버튼 -->
+        <div class="detail__right">
+          <!-- 신용카드 / 휴대폰 탭  -->
+          <div class="detail-tabs" role="tablist" aria-label="결제 수단">
+            <button type="button" class="detail-tab detail-tab--first is-active" role="tab" aria-selected="true" data-tab="card" id="tab-card">
+              <span class="detail-tab__badge">3%</span>
+              <span class="detail-tab__label">신용카드</span>
+            </button>
+            <button type="button" class="detail-tab detail-tab--last" role="tab" aria-selected="false" data-tab="phone" id="tab-phone">
+              <span class="detail-tab__label">휴대폰</span>
+            </button>
+          </div>
+
+          <!-- 신용카드 패널 -->
+          <div class="detail-panel is-active" data-tab-panel="card" role="tabpanel" id="panel-card" aria-labelledby="tab-card">
+
+            <section class="detail__section">
+              <h3 class="detail__section-title detail__section-title--lg">구매 수량 선택</h3>
+              <p class="detail__section-desc">1회 최대 10매까지 구매하실 수 있습니다.<br>구매 시 한 가지 권종으로만 구매 가능합니다.</p>
+              <div class="detail-quantity-list">
+                <div class="detail-quantity">
+                  <div class="detail-quantity__prices">
+                    <span class="detail-quantity__price-old">10,000원</span>
+                    <span class="detail-quantity__price">9,700원</span>
+                    <span class="detail-quantity__discount">
+                      <span class="detail-quantity__discount-text">3%</span>
+                      <i class="detail-quantity__down-icon"></i>
+                    </span>
+                  </div>
+                  <div class="detail-quantity__controls">
+                    <div class="detail-quantity__stepper">
+                      <button type="button" class="detail-quantity__btn detail-quantity__btn--minus" aria-label="수량 감소"></button>
+                      <input type="text" class="detail-quantity__input" value="10" inputmode="numeric" maxlength="2" aria-label="수량">
+                      <button type="button" class="detail-quantity__btn detail-quantity__btn--plus" aria-label="수량 증가"></button>
+                    </div>
+                    <button type="button" class="detail-quantity__max" aria-label="최대 수량 10매">10</button>
+                  </div>
+                </div>
+                <div class="detail-quantity">
+                  <div class="detail-quantity__prices">
+                    <span class="detail-quantity__price-old">30,000원</span>
+                    <span class="detail-quantity__price">29,100원</span>
+                    <span class="detail-quantity__discount">
+                      <span class="detail-quantity__discount-text">3%</span>
+                      <i class="detail-quantity__down-icon"></i>
+                    </span>
+                  </div>
+                  <div class="detail-quantity__controls">
+                    <div class="detail-quantity__stepper">
+                      <button type="button" class="detail-quantity__btn detail-quantity__btn--minus" aria-label="수량 감소"></button>
+                      <input type="text" class="detail-quantity__input" value="10" inputmode="numeric" maxlength="2" aria-label="수량">
+                      <button type="button" class="detail-quantity__btn detail-quantity__btn--plus" aria-label="수량 증가"></button>
+                    </div>
+                    <button type="button" class="detail-quantity__max" aria-label="최대 수량 10매">10</button>
+                  </div>
+                </div>
+                <div class="detail-quantity">
+                  <div class="detail-quantity__prices">
+                    <span class="detail-quantity__price-old">50,000원</span>
+                    <span class="detail-quantity__price">48,500원</span>
+                    <span class="detail-quantity__discount">
+                      <span class="detail-quantity__discount-text">3%</span>
+                      <i class="detail-quantity__down-icon"></i>
+                    </span>
+                  </div>
+                  <div class="detail-quantity__controls">
+                    <div class="detail-quantity__stepper">
+                      <button type="button" class="detail-quantity__btn detail-quantity__btn--minus" aria-label="수량 감소"></button>
+                      <input type="text" class="detail-quantity__input" value="10" inputmode="numeric" maxlength="2" aria-label="수량">
+                      <button type="button" class="detail-quantity__btn detail-quantity__btn--plus" aria-label="수량 증가"></button>
+                    </div>
+                    <button type="button" class="detail-quantity__max" aria-label="최대 수량 10매">10</button>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="detail__section detail__section--summary">
+              <h3 class="detail__section-title detail__section-title--lg">결제 금액</h3>
+              <div class="detail-summary">
+                <div class="detail-summary__row">
+                  <span>상품권 금액</span>
+                  <span>0 원</span>
+                </div>
+                <div class="detail-summary__row">
+                  <span>서비스 이용 금액</span>
+                  <span>0 원</span>
+                </div>
+                <div class="detail-summary__divider"></div>
+                <div class="detail-summary__row detail-summary__row--total">
+                  <span>총 결제 금액</span>
+                  <span class="detail-summary__total">0 원</span>
+                </div>
+              </div>
+            </section>
+
+            <label for="detail-agree-card" class="detail-agree">
+              <input type="checkbox" id="detail-agree-card" class="hidden" checked>
+              <span class="detail-agree__text">결제 정보 및 구매 유의사항을 확인하고 이에 동의합니다.</span>
+            </label>
+
+            <div class="detail__actions">
+              <button type="button" class="c-btn c-btn--full">결제하기</button>
+            </div>
+
+          </div>
+
+          <!-- 휴대폰 패널 -->
+          <div class="detail-panel" data-tab-panel="phone" role="tabpanel" id="panel-phone" aria-labelledby="tab-phone">
+
+            <section class="detail__section">
+              <h3 class="detail__section-title detail__section-title--lg">구매 수량 선택</h3>
+              <p class="detail__section-desc">1회 최대 10매까지 구매하실 수 있습니다.<br>구매 시 한 가지 권종으로만 구매 가능합니다.</p>
+              <div class="detail-quantity-list">
+                <div class="detail-quantity">
+                  <div class="detail-quantity__prices">
+                    <span class="detail-quantity__price">10,000원</span>
+                  </div>
+                  <div class="detail-quantity__controls">
+                    <div class="detail-quantity__stepper">
+                      <button type="button" class="detail-quantity__btn detail-quantity__btn--minus" aria-label="수량 감소"></button>
+                      <input type="text" class="detail-quantity__input" value="1" inputmode="numeric" maxlength="2" aria-label="수량">
+                      <button type="button" class="detail-quantity__btn detail-quantity__btn--plus" aria-label="수량 증가"></button>
+                    </div>
+                    <button type="button" class="detail-quantity__max" aria-label="최대 수량 10매">10</button>
+                  </div>
+                </div>
+                <div class="detail-quantity">
+                  <div class="detail-quantity__prices">
+                    <span class="detail-quantity__price">30,000원</span>
+                  </div>
+                  <div class="detail-quantity__controls">
+                    <div class="detail-quantity__stepper">
+                      <button type="button" class="detail-quantity__btn detail-quantity__btn--minus" aria-label="수량 감소"></button>
+                      <input type="text" class="detail-quantity__input" value="1" inputmode="numeric" maxlength="2" aria-label="수량">
+                      <button type="button" class="detail-quantity__btn detail-quantity__btn--plus" aria-label="수량 증가"></button>
+                    </div>
+                    <button type="button" class="detail-quantity__max" aria-label="최대 수량 10매">10</button>
+                  </div>
+                </div>
+                <div class="detail-quantity">
+                  <div class="detail-quantity__prices">
+                    <span class="detail-quantity__price">50,000원</span>
+                  </div>
+                  <div class="detail-quantity__controls">
+                    <div class="detail-quantity__stepper">
+                      <button type="button" class="detail-quantity__btn detail-quantity__btn--minus" aria-label="수량 감소"></button>
+                      <input type="text" class="detail-quantity__input" value="1" inputmode="numeric" maxlength="2" aria-label="수량">
+                      <button type="button" class="detail-quantity__btn detail-quantity__btn--plus" aria-label="수량 증가"></button>
+                    </div>
+                    <button type="button" class="detail-quantity__max" aria-label="최대 수량 10매">10</button>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="detail__section detail__section--summary">
+              <h3 class="detail__section-title detail__section-title--lg">결제 금액</h3>
+              <div class="detail-summary">
+                <div class="detail-summary__row">
+                  <span>상품권 금액</span>
+                  <span>0 원</span>
+                </div>
+                <div class="detail-summary__row">
+                  <span>서비스 이용 금액</span>
+                  <span>0 원</span>
+                </div>
+                <div class="detail-summary__divider"></div>
+                <div class="detail-summary__row detail-summary__row--total">
+                  <span>총 결제 금액</span>
+                  <span class="detail-summary__total">0 원</span>
+                </div>
+              </div>
+            </section>
+
+            <label for="detail-agree-phone" class="detail-agree">
+              <input type="checkbox" id="detail-agree-phone" class="hidden">
+              <span class="detail-agree__text">결제 정보 및 구매 유의사항을 확인하고 이에 동의합니다.</span>
+            </label>
+
+            <div class="detail__actions">
+              <button type="button" class="c-btn c-btn--full">결제하기</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- 상품설명 -->
+      <section class="detail__description">
+        <h3 class="detail__section-title">상품설명</h3>
+        <div class="detail__section-body">
+          <p>•로렘 입숨(lorem ipsum; 줄여서 립숨, lipsum)은 출판이나 그래픽 디자인 분야에서 폰트, 타이포그래피,</p>
+          <p>•레이아웃 같은 그래픽 요소나 시각적 연출을 보여줄 때 사용하는 표준 채우기 텍스트로,</p>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- 푸터 -->
+  <footer class="footer">
+    <div class="footer__top page-width">
+      <a href="#" class="footer__link">이용약관</a>
+      <a href="#" class="footer__link">개인정보처리방침</a>
+    </div>
+    <div class="footer__bottom">
+      <div class="page-width footer__inner">
+        <img src="https://www.figma.com/api/mcp/asset/38f97d22-8392-4234-b811-5b36643c1f01" alt="핀왕" class="footer__logo" width="120" height="40">
+        <div class="footer__info">
+          <p class="footer__text">(주)호라이즌테크놀러지 | 대표: 김경호  | 대표번호 1670-2983 평일 10:00 ~ 17:00 (점심시간 12:30 ~ 13:30) / 공휴일 휴무</p>
+          <p class="footer__text">주소: 서울특별시 강서구 양천로 583, B동 1101호 (염창동, 우림블루나인센터)</p>
+          <p class="footer__text">사업자등록번호: 220-86-93669 통신판매신고번호: 2018-서울강서-0830호</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/detail.js" defer></script>
+</body>
+</html>

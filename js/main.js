@@ -1,7 +1,26 @@
-/**
- * 메인 진입 스크립트
- * 이후 페이지별/기능별 스크립트는 여기서 확장
- */
 (function () {
   'use strict';
+
+  function initBannerSwiper() {
+    var bannerEl = document.querySelector('.banner-swiper');
+    if (!bannerEl) return;
+
+    if (typeof Swiper === 'undefined') return;
+
+    new Swiper('.banner-swiper', {
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false
+      },
+      effect: 'slide',
+      speed: 600
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initBannerSwiper);
+  } else {
+    initBannerSwiper();
+  }
 })();

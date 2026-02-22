@@ -28,7 +28,6 @@
 
 - **역할:** Figma 등 디자인 시안에서 나온 공통 변수를 `:root`에 정의
 - **내용:** 색상, 간격(spacing), 타이포그래피, 그림자, 브레이크포인트(참고용)
-- **작업:** 추후 Figma 시안 전달 시 해당 값으로 채우거나, `node scripts/figma-to-css.js` 실행 (FIGMA_ACCESS_TOKEN 필요)
 
 ---
 
@@ -48,8 +47,8 @@
 
 | 구간        | 뷰포트              | 미디어쿼리 |
 |------------|---------------------|------------|
-| PC         | 1200px 이상          | 없음 (기본 스타일) |
-| 태블릿     | 561px ~ 1199px      | `@media (max-width: 1199px)` |
+| PC         | 1201px 이상          | 없음 (기본 스타일) |
+| 태블릿     | 561px ~ 1200px      | `@media (max-width: 1200px)` |
 | 모바일     | 560px 이하          | `@media (max-width: 560px)` |
 
 - **작성 규칙:** 기본 스타일을 PC 기준으로 두고, 태블릿/모바일에서 max-width로 덮어쓰기
@@ -60,7 +59,7 @@
 ## 5. 브레이크포인트 다이어그램
 
 ```
-[ PC: 1200px 이상 (기본) ]  →  [ 태블릿: max-width 1199px ]  →  [ 모바일: max-width 560px ]
+[ PC: 1201px 이상 (기본) ]  →  [ 태블릿: max-width 1200px ]  →  [ 모바일: max-width 560px ]
 ```
 
 ---
@@ -68,6 +67,6 @@
 ## 6. 다른 환경에서 이어서 작업할 때
 
 1. **CSS 파일 순서** — `tokens.css` → `common.css` → `styles.css` 유지
-2. **새 페이지 스타일** — `styles.css`에 PC 스타일 먼저, 그다음 `@media (max-width: 1199px)`, `@media (max-width: 560px)` 블록에 추가
-3. **디자인 토큰 추가** — `tokens.css`의 `:root`에 변수 추가 후, `styles.css`/`common.css`에서 `var(--변수명)` 사용
+2. **새 페이지 스타일** — `main.css`에 각 페이지별 PC 스타일 먼저, 그다음 `@media (max-width: 1199px)`, `@media (max-width: 560px)` 블록에 추가
+3. **디자인 토큰 추가** — `tokens.css`의 `:root`에 변수 추가 후, `main.css`/`common.css`에서 `var(--변수명)` 사용
 4. **Figma 연동** — `FIGMA_ACCESS_TOKEN` 설정 후 `node scripts/figma-to-css.js` 실행 시 tokens/버튼이 Figma 값으로 갱신됨 (스크립트 사용 시 `scripts/README.md` 참고)

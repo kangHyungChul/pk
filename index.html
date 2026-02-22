@@ -3,13 +3,222 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PK</title>
-  <!-- 1. 토큰(변수) → 2. 공통(리셋/body/유틸) → 3. 실제 스타일 -->
+  <title>핀왕 - 쉽고 안전한 상품권 구매</title>
+  <!-- tokens.css, common.css 공통스타일 고정-->
   <link rel="stylesheet" href="css/tokens.css">
   <link rel="stylesheet" href="css/common.css">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <!-- main.css 메인 스타일 -->
+  <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+
+  <!-- 헤더 -->
+  <header class="header">
+    <div class="page-width header__inner">
+      <h1 class="header__logo">
+        <a href="/" aria-label="핀왕 홈">
+          <img src="assets/logo.png" alt="핀왕" class="header__logo-img" width="120" height="40">
+        </a>
+      </h1>
+      <nav class="header__nav" aria-label="주 메뉴">
+        <ul class="header__nav-list">
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link">이용 가이드</a>
+            <ul class="header__dropdown">
+              <li><a href="#">구매안내</a></li>
+              <li><a href="#">상품권 확인</a></li>
+              <li><a href="#">취소안내</a></li>
+              <li><a href="#">사용처</a></li>
+            </ul>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link">고객센터</a>
+            <ul class="header__dropdown">
+              <li><a href="#">공지사항</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__actions">
+        <a href="#" class="c-btn header__btn-join">회원가입</a>
+        <a href="#" class="header__link-login">로그인</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- 배너 영역 -->
+    <section class="banner" aria-label="메인 배너">
+      <div class="swiper banner-swiper">
+        <div class="swiper-wrapper">
+          <!-- 슬라이드 이미지: 1920*400 권장, 반응형 시 가운데 기준 유지 -->
+          <a href="#" class="swiper-slide banner-slide">
+            <img src="assets/banner_1.png" alt="믿고 쓰는 상품권 구매, 핀왕에서 빠르게!" class="banner-slide__img" width="1920" height="400">
+          </a>
+          <a href="#" class="swiper-slide banner-slide">
+            <img src="assets/banner_2.png" alt="가입한 휴대폰 번호로 즉시 전송! 쉽고 안전한 상품권 구매하기" class="banner-slide__img" width="1920" height="400">
+          </a>
+        </div>
+        <div class="swiper-pagination banner-swiper__pagination"></div>
+      </div>
+    </section>
+
+    <!--상품권 목록  -->
+    <section class="section section--products">
+      <div class="page-width">
+        <h2 class="section__title">언제나 빠른 핀왕</h2>
+        <ul class="product-grid">
+          <li class="product-card">
+            <a href="#" class="product-card__link">
+            <div class="product-card__thumb">
+              <img src="assets/brand_culture.png" alt="컬쳐랜드" width="120" height="120">
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__title">컬쳐랜드 상품권</h3>
+              <span class="product-card__badge product-card__badge--theme">대량 구매 최대 ~3% 할인</span>
+            </div>
+            </a>
+          </li>
+          <li class="product-card">
+            <a href="#" class="product-card__link">
+            <div class="product-card__thumb">
+              <img src="assets/brand_google.png" alt="구글 기프트" width="120" height="120">
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__title">구글 기프트코드</h3>
+              <p class="product-card__desc">구매 후 즉시 발송</p>
+            </div>
+            </a>
+          </li>
+          <li class="product-card">
+            <a href="#" class="product-card__link">
+            <div class="product-card__thumb">
+              <img src="assets/brand_tcash.png" alt="T마일리지" width="120" height="120">
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__title">T마일리지 충전권</h3>
+              <p class="product-card__desc">구매 후 즉시 발송</p>
+            </div>
+            </a>
+          </li>
+          <li class="product-card">
+            <a href="#" class="product-card__link">
+            <div class="product-card__thumb">
+              <img src="assets/brand_shinsegae.png" alt="신세계백화점" width="120" height="120">
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__title">신세계백화점 상품권</h3>
+              <p class="product-card__desc">구매 후 즉시 발송</p>
+            </div>
+            </a>
+          </li>
+          <li class="product-card">
+            <a href="#" class="product-card__link">
+            <div class="product-card__thumb">
+              <img src="assets/brand_onlinegift.png" alt="도서 문화 상품권" width="120" height="120">
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__title">도서 문화 상품권</h3>
+              <span class="product-card__badge product-card__badge--theme">대량 구매 최대 ~3% 할인</span>
+            </div>
+            </a>
+          </li>
+          <li class="product-card">
+            <a href="#" class="product-card__link">
+            <div class="product-card__thumb">
+              <img src="assets/brand_soop.png" alt="SOOP 별풍선" width="120" height="120">
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__title">SOOP 별풍선 상품권</h3>
+              <span class="product-card__badge product-card__badge--theme">대량 구매 최대 ~3% 할인</span>
+            </div>
+            </a>
+          </li>
+        </div>
+      </div>
+    </section>
+
+    <!-- 공지사항 + 이용 가이드 -->
+    <section class="section section--notice-guide">
+      <div class="page-width section__row">
+        <!-- 좌: 공지사항 -->
+        <div class="notice-column">
+          <div class="notice-column__head">
+            <h2 class="section__title">공지사항</h2>
+            <a href="#" class="notice-column__more">더보기</a>
+          </div>
+          <ul class="notice-list">
+            <li class="notice-list__item">
+              <span class="notice-list__tag">점검</span>
+              <a href="#" class="notice-list__text">2024.10.25(금) 2시~4시 서버 점검 안내 (점검완료)2024.10.25(금) 2시~4시 서버 점검 안내 (점검완료)</a>
+            </li>
+            <li class="notice-list__item">
+              <span class="notice-list__tag">안내</span>
+              <a href="#" class="notice-list__text">보이스피싱사기 예방 안내</a>
+            </li>
+            <li class="notice-list__item">
+              <span class="notice-list__tag">안내</span>
+              <a href="#" class="notice-list__text">휴대폰 결제시 한도초과</a>
+            </li>
+            <li class="notice-list__item">
+              <span class="notice-list__tag">점검</span>
+              <a href="#" class="notice-list__text">2024.10.25(금) 2시~4시 서버 점검 안내 (점검완료)</a>
+            </li>
+            <li class="notice-list__item">
+              <span class="notice-list__tag">안내</span>
+              <a href="#" class="notice-list__text">사이트 오픈 안내</a>
+            </li>
+          </ul>
+        </div>
+        <!-- 우: 이용 가이드 -->
+        <div class="guide-column">
+          <h2 class="section__title">이용 가이드</h2>
+          <div class="guide-grid">
+            <a href="#" class="guide-card">
+              <p class="guide-card__title">[구매 안내]</p>
+              <p class="guide-card__desc">핀왕에서 상품권 구매하는 방법</p>
+            </a>
+            <a href="#" class="guide-card">
+              <p class="guide-card__title">[상품권 확인]</p>
+              <p class="guide-card__desc">PIN번호와 유효기간 확인하기</p>
+            </a>
+            <a href="#" class="guide-card">
+              <p class="guide-card__title">[취소안내]</p>
+              <p class="guide-card__desc">구매 상품권의 취소 조건 및 방법</p>
+            </a>
+            <a href="#" class="guide-card">
+              <p class="guide-card__title">[사용처]</p>
+              <p class="guide-card__desc">상품권별 사용처 확인하기</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 푸터 -->
+  <footer class="footer">
+    <div class="footer__top page-width">
+      <a href="#" class="footer__link">이용약관</a>
+      <a href="#" class="footer__link">개인정보처리방침</a>
+    </div>
+    <div class="footer__bottom">
+      <div class="page-width footer__inner">
+        <img src="https://www.figma.com/api/mcp/asset/38f97d22-8392-4234-b811-5b36643c1f01" alt="핀왕" class="footer__logo" width="120" height="40">
+        <div class="footer__info">
+          <p class="footer__text">(주)호라이즌테크놀러지 | 대표: 김경호  | 대표번호 1670-2983 평일 10:00 ~ 17:00 (점심시간 12:30 ~ 13:30) / 공휴일 휴무</p>
+          <p class="footer__text">주소: 서울특별시 강서구 양천로 583, B동 1101호 (염창동, 우림블루나인센터)</p>
+          <p class="footer__text">사업자등록번호: 220-86-93669 통신판매신고번호: 2018-서울강서-0830호</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/swiper-bundle.min.js" defer></script>
   <script src="js/main.js" defer></script>
 </body>
 </html>
