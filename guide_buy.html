@@ -7,8 +7,8 @@
   <!-- tokens.css, common.css 공통스타일 고정-->
   <link rel="stylesheet" href="css/tokens.css">
   <link rel="stylesheet" href="css/common.css">
-  <!-- result.css 결과 페이지 스타일 -->
-  <link rel="stylesheet" href="css/result.css">
+  <!-- guide.css 이용가이드 공통 스타일 (구매안내/상품권 확인/사용처) -->
+  <link rel="stylesheet" href="css/guide.css">
 </head>
 <body>
 
@@ -25,10 +25,10 @@
           <li class="header__nav-item">
             <a href="#" class="header__nav-link">이용 가이드</a>
             <ul class="header__dropdown">
-              <li><a href="#">구매안내</a></li>
-              <li><a href="#">상품권 확인</a></li>
+              <li><a href="guide_buy.html">구매안내</a></li>
+              <li><a href="guide_confirm.html">상품권 확인</a></li>
               <li><a href="#">취소안내</a></li>
-              <li><a href="#">사용처</a></li>
+              <li><a href="guide_use.html">사용처</a></li>
             </ul>
           </li>
           <li class="header__nav-item">
@@ -49,63 +49,60 @@
     </div>
   </header>
 
-  <main class="result">
+  <main class="guide">
+    <div class="page-width guide__inner">
 
-    <!-- 주문완료 -->
-    <div class="page-width result__inner">
-      <h2 class="result__title">상품권 결제가 완료되었습니다.</h2>
-
-      <div class="result__card">
-
-        <div class="result__card-inner">
-          <dl class="result__list">
-            <div class="result__row">
-              <dt class="result__label">상품권</dt>
-              <dd class="result__value">컬쳐랜드 상품권 1매</dd>
-            </div>
-            <div class="result__row">
-              <dt class="result__label">결제수단</dt>
-              <dd class="result__value">신용카드</dd>
-            </div>
-            <div class="result__row">
-              <dt class="result__label">결제금액</dt>
-              <dd class="result__value">50,000원</dd>
-            </div>
-            <div class="result__row">
-              <dt class="result__label">수신 휴대폰 번호</dt>
-              <dd class="result__value result__value--phone">01011112222</dd>
-            </div>
-          </dl>
-        </div>
-
-        <div class="result__card-actions">
-          <a href="#" class="c-btn is-disabled">구매내역으로</a>
-          <a href="#" class="c-btn">확인</a>
-        </div>
-        
+      <!-- 공통: 페이지 헤더 (header 태그 미사용) -->
+      <div class="guide-head">
+        <h2 class="page-header guide-head__title">구매안내</h2>
+        <p class="guide-head__subtitle">핀왕에서 상품권 구매하는 방법</p>
       </div>
-    </div>
 
-    <!-- 주문실패 -->
-    <!--
-    <div class="page-width result__inner">
-      <h2 class="result__title">상품권 결제가 실패되었습니다.</h2>
-
-      <div class="result__card">
-
-        <div class="result__card-inner">
-          <p class="result__card-fail">실패사유: 카드 승인 거절</p>
-        </div>
-
-        <div class="result__card-actions">
-          <a href="#" class="c-btn is-disabled">이전으로</a>
-          <a href="#" class="c-btn">확인</a>
-        </div>
-        
+      <!-- 스텝형 콘텐츠: 단계별 이미지 + 설명 (모듈 재사용) -->
+      <div class="guide-layout">
+        <ul class="guide-steps">
+          <li class="guide-step">
+            <div class="guide-step__media" aria-hidden="true">
+              <img src="assets/banner_2.png" alt="상품권 목록 화면">
+            </div>
+            <div class="guide-step__body">
+              <span class="guide-step__num">1</span>
+              <div class="guide-step__content">
+                <p class="guide-step__title">구매하려는 상품권 클릭</p>
+              </div>
+            </div>
+          </li>
+          <li class="guide-step">
+            <div class="guide-step__media" aria-hidden="true">
+              <img src="assets/brand_culture_lg.png" alt="상품권 금액·수량 선택 화면">
+            </div>
+            <div class="guide-step__body">
+              <span class="guide-step__num">2</span>
+              <div class="guide-step__content">
+                <div class="guide-step__lines">
+                  <p>상품권의 금액 및 수량 선택</p>
+                  <p>결제 금액 확인 후 이용동의 체크</p>
+                  <p>구매하기 버튼 클릭</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="guide-step">
+            <div class="guide-step__media" aria-hidden="true">
+              <img src="assets/banner_1.png" alt="구매 완료 확인 화면">
+            </div>
+            <div class="guide-step__body">
+              <span class="guide-step__num">3</span>
+              <div class="guide-step__content">
+                <p class="guide-step__title">구매한 상품권 정보 확인</p>
+                <p class="guide-step__desc">가입한 휴대폰 번호로 발송됩니다.</p>
+              </div>
+            </div>
+          </li>
+        </ul>
       </div>
-    </div>
-    -->
 
+    </div>
   </main>
 
   <!-- 푸터 -->

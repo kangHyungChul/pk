@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>공지사항 - 핀왕</title>
+  <!-- tokens.css, common.css 공통스타일 고정 -->
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/common.css">
+  <!-- customer.css 고객센터(공지사항 등) 스타일 -->
+  <link rel="stylesheet" href="css/customer.css">
+</head>
+<body>
+
+  <!-- 헤더 -->
+  <header class="header">
+    <div class="page-width header__inner">
+      <h1 class="header__logo">
+        <a href="/" aria-label="핀왕 홈">
+          <img src="assets/logo.png" alt="핀왕" class="header__logo-img">
+        </a>
+      </h1>
+      <nav class="header__nav" aria-label="주 메뉴">
+        <ul class="header__nav-list">
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link">이용 가이드</a>
+            <ul class="header__dropdown">
+              <li><a href="guide_buy.html">구매안내</a></li>
+              <li><a href="guide_confirm.html">상품권 확인</a></li>
+              <li><a href="#">취소안내</a></li>
+              <li><a href="guide_use.html">사용처</a></li>
+            </ul>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link">고객센터</a>
+            <ul class="header__dropdown">
+              <li><a href="#">공지사항</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__actions">
+        <a href="#" class="c-btn header__btn-join">회원가입</a>
+        <a href="#" class="header__link-login">로그인</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="customer">
+    <div class="page-width customer__inner">
+
+      <!-- 공지사항 제목 + 구분선 -->
+      <div class="notice_head">
+        <h2 class="page-header notice_title">공지사항</h2>
+      </div>
+
+      <p class="notice-list__count">전체 <span class="notice-list__count-num">5</span> 건</p>
+
+      <!-- 공지 목록: ul/li 테이블형 (번호·제목·등록일) -->
+      <ul class="notice-list">
+        <li class="notice-list__row">
+          <span class="notice_badge notice_badge--notice">공지</span>
+          <div class="notice-list__row-inner">
+            <span class="notice_badge">점검</span>
+            <a href="#" class="notice-list__title-link">
+              <span>2024.10.25(금) 2시~4시 서버 점검 안내 (점검완료)</span>
+            </a>
+          </div>
+          <span class="notice_date">2024.01.01</span>
+        </li>
+        <li class="notice-list__row">
+          <span class="notice_badge notice_badge--notice">공지</span>
+          <div class="notice-list__row-inner">
+            <span class="notice_badge">안내</span>
+            <a href="#" class="notice-list__title-link">
+              <span>보이스피싱사기 예방 안내</span>
+            </a>
+          </div>
+          <span class="notice_date">2023.12.25</span>
+        </li>
+        <li class="notice-list__row">
+          <span class="notice-list__num">3</span>
+          <div class="notice-list__row-inner">
+            <span class="notice_badge">안내</span>
+            <a href="#" class="notice-list__title-link">
+              <span>휴대폰 결제시 한도초과</span>
+            </a>
+          </div>
+          <span class="notice_date">2023.12.01</span>
+        </li>
+        <li class="notice-list__row">
+          <span class="notice-list__num">2</span>
+          <div class="notice-list__row-inner">
+            <span class="notice_badge">점검</span>
+            <a href="#" class="notice-list__title-link">
+              <span>2025.10.25(금) 2시~4시 서버 점검 안내 (점검완료)</span>
+            </a>
+          </div>
+          <span class="notice_date">2023.11.15</span>
+        </li>
+        <li class="notice-list__row">
+          <span class="notice-list__num">1</span>
+          <div class="notice-list__row-inner">
+            <span class="notice_badge">안내</span>
+            <a href="#" class="notice-list__title-link">
+              <span>사이트 오픈 안내</span>
+            </a>
+          </div>
+          <span class="notice_date">2023.11.01</span>
+        </li>
+      </ul>
+
+      <!-- 페이지네이션 -->
+      <nav class="pagination">
+        <a href="#" class="pagination__btn pagenation__btn--prev" aria-label="이전 페이지"></a>
+        <a href="#" class="pagination__num is-active" aria-current="page">1</a>
+        <a href="#" class="pagination__num">2</a>
+        <a href="#" class="pagination__num">3</a>
+        <a href="#" class="pagination__num">4</a>
+        <a href="#" class="pagination__num">5</a>
+        <a href="#" class="pagination__btn pagenation__btn--next" aria-label="다음 페이지"></a>
+      </nav>
+
+    </div>
+  </main>
+
+  <!-- 푸터 -->
+  <footer class="footer">
+    <div class="footer__top page-width">
+      <a href="#" class="footer__link">이용약관</a>
+      <a href="#" class="footer__link">개인정보처리방침</a>
+    </div>
+    <div class="footer__bottom">
+      <div class="page-width footer__inner">
+        <img src="assets/logo_gray.png" alt="핀왕" class="footer__logo">
+        <div class="footer__info">
+          <p class="footer__text">(주)호라이즌테크놀러지 | 대표: 김경호  | 대표번호 1670-2983 평일 10:00 ~ 17:00 (점심시간 12:30 ~ 13:30) / 공휴일 휴무</p>
+          <p class="footer__text">주소: 서울특별시 강서구 양천로 583, B동 1101호 (염창동, 우림블루나인센터)</p>
+          <p class="footer__text">사업자등록번호: 220-86-93669 통신판매신고번호: 2018-서울강서-0830호</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/common.js"></script>
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ - 핀왕</title>
+  <!-- tokens.css, common.css 공통스타일 고정 -->
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/common.css">
+  <!-- customer.css 고객센터(공지사항 등) 스타일 -->
+  <link rel="stylesheet" href="css/customer.css">
+</head>
+<body>
+
+  <!-- 헤더 -->
+  <header class="header">
+    <div class="page-width header__inner">
+      <h1 class="header__logo">
+        <a href="/" aria-label="핀왕 홈">
+          <img src="assets/logo.png" alt="핀왕" class="header__logo-img">
+        </a>
+      </h1>
+      <nav class="header__nav" aria-label="주 메뉴">
+        <ul class="header__nav-list">
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link">이용 가이드</a>
+            <ul class="header__dropdown">
+              <li><a href="guide_buy.html">구매안내</a></li>
+              <li><a href="guide_confirm.html">상품권 확인</a></li>
+              <li><a href="#">취소안내</a></li>
+              <li><a href="guide_use.html">사용처</a></li>
+            </ul>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link">고객센터</a>
+            <ul class="header__dropdown">
+              <li><a href="#">공지사항</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__actions">
+        <a href="#" class="c-btn header__btn-join">회원가입</a>
+        <a href="#" class="header__link-login">로그인</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="customer">
+    <div class="page-width customer__inner">
+
+      <!-- faq 제목 -->
+      <div class="notice_head">
+        <h2 class="page-header notice_title">FAQ</h2>
+      </div>
+
+      <!-- FAQ 탭 (Figma 4744-3968) -->
+      <div class="faq-tabs">
+        <a href="#" class="faq-tab is-active">회원가입</a>
+        <a href="#" class="faq-tab">상품권 결제</a>
+        <a href="#" class="faq-tab">상품권 사용</a>
+        <a href="#" class="faq-tab">재발송/취소</a>
+        <a href="#" class="faq-tab">기타 문의</a>
+      </div>
+
+      <!-- faq요소 -->
+      <div class="faq" role="list">
+        <div class="faq__item">
+          <button type="button" class="faq__trigger" aria-expanded="false" aria-controls="faq-panel-1" id="faq-q1" data-faq-trigger>
+            <span class="faq__q">Q</span>
+            <span class="faq__question">회원 가입 제한이 있나요?</span>
+            <span class="faq__icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq__panel" id="faq-panel-1" role="region" aria-labelledby="faq-q1" hidden>
+            <span class="faq__a">A</span>
+            <div class="faq__answer">
+              <p>- 로렘 입숨(lorem ipsum; 줄여서 립숨, lipsum)은 출판이나 그래픽 디자인 분야에서 폰트, 타이포그래피,<br>
+              <p>- 레이아웃 같은 그래픽 요소나 시각적 연출을 보여줄 때 사용하는 표준 채우기 텍스트로, 최종 결과물에 들어가는 실제적인 문장 내용이 채워지기 전에</p>
+            </div>
+          </div>
+        </div>
+        <div class="faq__item">
+          <button type="button" class="faq__trigger" aria-expanded="false" aria-controls="faq-panel-2" id="faq-q2" data-faq-trigger>
+            <span class="faq__q">Q</span>
+            <span class="faq__question">회원가입 시 등록한 휴대폰 번호를 변경할 수 있나요?</span>
+            <span class="faq__icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq__panel" id="faq-panel-2" role="region" aria-labelledby="faq-q2" hidden>
+            <span class="faq__a">A</span>
+            <div class="faq__answer">
+              <p>- 로렘 입숨(lorem ipsum; 줄여서 립숨, lipsum)은 출판이나 그래픽 디자인 분야에서 폰트, 타이포그래피,<br>
+              <p>- 레이아웃 같은 그래픽 요소나 시각적 연출을 보여줄 때 사용하는 표준 채우기 텍스트로, 최종 결과물에 들어가는 실제적인 문장 내용이 채워지기 전에</p>
+            </div>
+          </div>
+        </div>
+        <div class="faq__item">
+          <button type="button" class="faq__trigger" aria-expanded="false" aria-controls="faq-panel-3" id="faq-q3" data-faq-trigger>
+            <span class="faq__q">Q</span>
+            <span class="faq__question">회원 탈퇴는 어떻게 하나요?</span>
+            <span class="faq__icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq__panel" id="faq-panel-3" role="region" aria-labelledby="faq-q3" hidden>
+            <span class="faq__a">A</span>
+            <div class="faq__answer">
+              <p>- 로렘 입숨(lorem ipsum; 줄여서 립숨, lipsum)은 출판이나 그래픽 디자인 분야에서 폰트, 타이포그래피,<br>
+              <p>- 레이아웃 같은 그래픽 요소나 시각적 연출을 보여줄 때 사용하는 표준 채우기 텍스트로, 최종 결과물에 들어가는 실제적인 문장 내용이 채워지기 전에</p>
+            </div>
+          </div>
+        </div>
+        <div class="faq__item">
+          <button type="button" class="faq__trigger" aria-expanded="false" aria-controls="faq-panel-4" id="faq-q4" data-faq-trigger>
+            <span class="faq__q">Q</span>
+            <span class="faq__question">회원 탈퇴 후 재가입이 가능한가요?</span>
+            <span class="faq__icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq__panel" id="faq-panel-4" role="region" aria-labelledby="faq-q4" hidden>
+            <span class="faq__a">A</span>
+            <div class="faq__answer">
+              <p>- 로렘 입숨(lorem ipsum; 줄여서 립숨, lipsum)은 출판이나 그래픽 디자인 분야에서 폰트, 타이포그래피,<br>
+              <p>- 레이아웃 같은 그래픽 요소나 시각적 연출을 보여줄 때 사용하는 표준 채우기 텍스트로, 최종 결과물에 들어가는 실제적인 문장 내용이 채워지기 전에</p>
+            </div>
+          </div>
+        </div>
+        <div class="faq__item">
+          <button type="button" class="faq__trigger" aria-expanded="false" aria-controls="faq-panel-5" id="faq-q5" data-faq-trigger>
+            <span class="faq__q">Q</span>
+            <span class="faq__question">다수의 아이디를 사용할 수 있나요?</span>
+            <span class="faq__icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq__panel" id="faq-panel-5" role="region" aria-labelledby="faq-q5" hidden>
+            <span class="faq__a">A</span>
+            <div class="faq__answer">
+              <p>- 로렘 입숨(lorem ipsum; 줄여서 립숨, lipsum)은 출판이나 그래픽 디자인 분야에서 폰트, 타이포그래피,<br>
+              <p>- 레이아웃 같은 그래픽 요소나 시각적 연출을 보여줄 때 사용하는 표준 채우기 텍스트로, 최종 결과물에 들어가는 실제적인 문장 내용이 채워지기 전에</p>
+            </div>
+          </div>
+        </div>
+        <div class="faq__item">
+          <button type="button" class="faq__trigger" aria-expanded="false" aria-controls="faq-panel-6" id="faq-q6" data-faq-trigger>
+            <span class="faq__q">Q</span>
+            <span class="faq__question">회원가입 시 휴대폰 인증이 안돼요.</span>
+            <span class="faq__icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq__panel" id="faq-panel-6" role="region" aria-labelledby="faq-q6" hidden>
+            <span class="faq__a">A</span>
+            <div class="faq__answer">
+              <p>- 로렘 입숨(lorem ipsum; 줄여서 립숨, lipsum)은 출판이나 그래픽 디자인 분야에서 폰트, 타이포그래피,<br>
+              <p>- 레이아웃 같은 그래픽 요소나 시각적 연출을 보여줄 때 사용하는 표준 채우기 텍스트로, 최종 결과물에 들어가는 실제적인 문장 내용이 채워지기 전에</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- 푸터 -->
+  <footer class="footer">
+    <div class="footer__top page-width">
+      <a href="#" class="footer__link">이용약관</a>
+      <a href="#" class="footer__link">개인정보처리방침</a>
+    </div>
+    <div class="footer__bottom">
+      <div class="page-width footer__inner">
+        <img src="assets/logo_gray.png" alt="핀왕" class="footer__logo">
+        <div class="footer__info">
+          <p class="footer__text">(주)호라이즌테크놀러지 | 대표: 김경호  | 대표번호 1670-2983 평일 10:00 ~ 17:00 (점심시간 12:30 ~ 13:30) / 공휴일 휴무</p>
+          <p class="footer__text">주소: 서울특별시 강서구 양천로 583, B동 1101호 (염창동, 우림블루나인센터)</p>
+          <p class="footer__text">사업자등록번호: 220-86-93669 통신판매신고번호: 2018-서울강서-0830호</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/faq.js"></script>
+  <script src="js/common.js"></script>
+</body>
+</html>

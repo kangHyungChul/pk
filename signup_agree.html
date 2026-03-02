@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>회원가입 - 핀왕</title>
+  <!-- tokens.css, common.css 공통스타일 고정 -->
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/common.css">
+  <!-- signup.css 회원가입 스타일 -->
+  <link rel="stylesheet" href="css/signup.css">
+</head>
+<body>
+
+  <!-- 헤더 -->
+  <header class="header">
+    <div class="page-width header__inner">
+      <h1 class="header__logo">
+        <a href="/" aria-label="핀왕 홈">
+          <img src="assets/logo.png" alt="핀왕" class="header__logo-img">
+        </a>
+      </h1>
+      <nav class="header__nav" aria-label="주 메뉴">
+        <ul class="header__nav-list">
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link">이용 가이드</a>
+            <ul class="header__dropdown">
+              <li><a href="guide_buy.html">구매안내</a></li>
+              <li><a href="guide_confirm.html">상품권 확인</a></li>
+              <li><a href="#">취소안내</a></li>
+              <li><a href="guide_use.html">사용처</a></li>
+            </ul>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link">고객센터</a>
+            <ul class="header__dropdown">
+              <li><a href="#">공지사항</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__actions">
+        <a href="#" class="c-btn header__btn-join">회원가입</a>
+        <a href="#" class="header__link-login">로그인</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="signup">
+    <div class="page-width signup__inner">
+
+      <!-- 단계 표시 .is-current로 색상 -->
+      <div class="page-header signup-agree__steps" aria-label="회원가입 단계">
+        <h2 class="page-header signup-agree__step-title">회원가입</h2>
+        <ul class="signup-agree__step-list">
+          <li class="signup-agree__step-item is-current">1. 약관동의</li>
+          <li class="signup-agree__step-item">2. 본인인증</li>
+          <li class="signup-agree__step-item">3. 정보입력</li>
+          <li class="signup-agree__step-item">4. 가입완료</li>
+        </ul>
+      </div>
+
+      <!-- signup 컨텐츠 -->
+      <div class="signup-agree">
+
+        <!-- 회원가입 약관 (필수) -->
+        <section class="signup-agree__block">
+          <label class="signup-agree__head" for="agree_terms">
+            <span class="signup-agree__title">회원가입 약관 (필수)</span>
+            <input type="checkbox" class="signup-agree__input" name="agree_terms" id="agree_terms" aria-describedby="terms-text">
+            <span class="signup-agree__check-icon" aria-hidden="true"></span>
+          </label>
+          <div class="signup-agree__content" id="terms-text">
+            <p>대통령은 국가의 독립·영토의 보전·국가의 계속성과 헌법을 수호할 책무를 진다. 모든 국민은 법률이 정하는 바에 의하여 선거권을 가진다. 감사위원은 원장의 제청으로 대통령이 임명하고, 그 임기는 4년으로 하며, 1차에 한하여 중임할 수 있다. 국가안전보장회의의 조직·직무범위 기타 필요한 사항은 법률로 정한다.</p>
+            <p>대통령의 국법상 행위는 문서로써 하며, 이 문서에는 국무총리와 관계 국무위원이 부서한다. 군사에 관한 것도 또한 같다. 재의의 요구가 있을 때에는 국회는 재의에 붙이고,</p>
+          </div>
+        </section>
+
+        <!-- 개인정보 수집 및 이용 (필수) -->
+        <section class="signup-agree__block">
+          <label class="signup-agree__head" for="agree_private">
+            <span class="signup-agree__title">개인정보 수집 및 이용 (필수)</span>
+            <input type="checkbox" class="signup-agree__input" name="agree_private" id="agree_private" aria-describedby="private-text">
+            <span class="signup-agree__check-icon" aria-hidden="true"></span>
+          </label>
+          <div class="signup-agree__content" id="private-text">
+            <p>대통령은 국가의 독립·영토의 보전·국가의 계속성과 헌법을 수호할 책무를 진다. 모든 국민은 법률이 정하는 바에 의하여 선거권을 가진다. 감사위원은 원장의 제청으로 대통령이 임명하고, 그 임기는 4년으로 하며, 1차에 한하여 중임할 수 있다. 국가안전보장회의의 조직·직무범위 기타 필요한 사항은 법률로 정한다.</p>
+            <p>대통령의 국법상 행위는 문서로써 하며, 이 문서에는 국무총리와 관계 국무위원이 부서한다. 군사에 관한 것도 또한 같다. 재의의 요구가 있을 때에는 국회는 재의에 붙이고,</p>
+          </div>
+        </section>
+
+        <!-- 마케팅 정보 수신 동의 (선택) -->
+        <section class="signup-agree__block">
+          <label class="signup-agree__head" for="agree_marketing">
+            <span class="signup-agree__title">마케팅 정보 수신 동의 (선택)</span>
+            <input type="checkbox" class="signup-agree__input" name="agree_marketing" id="agree_marketing" aria-describedby="marketing-text">
+            <span class="signup-agree__check-icon" aria-hidden="true"></span>
+          </label>
+          <div class="signup-agree__content" id="marketing-text">
+            <p>대통령은 국가의 독립·영토의 보전·국가의 계속성과 헌법을 수호할 책무를 진다. 모든 국민은 법률이 정하는 바에 의하여 선거권을 가진다. 감사위원은 원장의 제청으로 대통령이 임명하고, 그 임기는 4년으로 하며, 1차에 한하여 중임할 수 있다. 국가안전보장회의의 조직·직무범위 기타 필요한 사항은 법률로 정한다.</p>
+            <p>대통령의 국법상 행위는 문서로써 하며, 이 문서에는 국무총리와 관계 국무위원이 부서한다. 군사에 관한 것도 또한 같다. 재의의 요구가 있을 때에는 국회는 재의에 붙이고,</p>
+          </div>
+        </section>
+
+        <!-- 전체 동의: 텍스트+체크박스 한 label로 묶음 -->
+        <div class="signup-agree__all">
+          <label class="signup-agree__all-label" for="agree_all">
+            <span class="signup-agree__all-text">회원가입 약관에 모두 동의합니다.</span>
+            <input type="checkbox" class="signup-agree__input" name="agree_all" id="agree_all">
+            <span class="signup-agree__check-icon" aria-hidden="true"></span>
+          </label>
+        </div>
+
+        <!-- 버튼: 취소 / 회원가입 -->
+        <div class="signup-agree__actions">
+          <button type="button" class="c-btn c-btn--white">취소</button>
+          <button type="button" class="c-btn" id="signup_submit_btn" disabled>회원가입</button>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- 푸터 -->
+  <footer class="footer">
+    <div class="footer__top page-width">
+      <a href="#" class="footer__link">이용약관</a>
+      <a href="#" class="footer__link">개인정보처리방침</a>
+    </div>
+    <div class="footer__bottom">
+      <div class="page-width footer__inner">
+        <img src="assets/logo_gray.png" alt="핀왕" class="footer__logo">
+        <div class="footer__info">
+          <p class="footer__text">(주)호라이즌테크놀러지 | 대표: 김경호  | 대표번호 1670-2983 평일 10:00 ~ 17:00 (점심시간 12:30 ~ 13:30) / 공휴일 휴무</p>
+          <p class="footer__text">주소: 서울특별시 강서구 양천로 583, B동 1101호 (염창동, 우림블루나인센터)</p>
+          <p class="footer__text">사업자등록번호: 220-86-93669 통신판매신고번호: 2018-서울강서-0830호</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/signup.js"></script>
+  <script src="js/common.js"></script>
+</body>
+</html>

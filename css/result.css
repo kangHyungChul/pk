@@ -1,13 +1,12 @@
-/* 주문완료 페이지 */
+/* 주문 완료 페이지 */
 
 .result {
-  background-color: #f8f8f8;
-  padding: 60px 0 80px;
-  min-height: 60vh;
+  padding: var(--page-gutter);
 }
 
 .result__inner {
-  padding: 80px 40px 160px;
+  padding-block: 80px 160px;
+  padding-inline: var(--inner-x);
   background-color: var(--color-bg-white);
 }
 

@@ -1,0 +1,289 @@
+/* 회원가입 (tokens.css, common.css 사용) */
+
+/* 레이아웃 */
+.signup {
+  padding: var(--page-gutter);
+}
+
+.signup__inner {
+  position: relative;
+  padding: 50px var(--inner-x) 80px;
+  background-color: var(--color-bg-white);
+  border-radius: 6px;
+}
+
+/* ========== 약관동의 ========== */
+
+/* 단계 표시: 회원가입 */
+.signup-agree__steps {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.signup-agree__step-title {
+  flex-shrink: 0;
+}
+
+.signup-agree__step-list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 24px;
+}
+
+.signup-agree__step-item {
+  color: var(--color-gray-300);
+}
+
+/* 2, 3, 4번 li 좌측에 화살표(가상요소), 색상은 .is-current 하나로 통일 */
+.signup-agree__step-item:not(:first-child)::before {
+  padding-inline: 10px;
+  content: '\00a0>\00a0';
+  color: inherit;
+}
+
+.signup-agree__step-item.is-current {
+  color: var(--color-theme-primary);
+  font-weight: 700;
+}
+
+/* 약관 블록 하나 (제목 + 구분선 + 내용 박스) */
+.signup-agree__block {
+  margin-bottom: 40px;
+}
+
+/* 약관 제목 행: label로 제목+체크박스 묶음, 클릭 시 체크 토글 */
+.signup-agree__head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  cursor: pointer;
+  border-bottom: 1px solid var(--color-bg-line);
+}
+
+.signup-agree__title {
+  font-family: var(--font-family-base);
+  font-weight: 700;
+  font-size: 24px;
+  color: var(--color-text-main);
+  flex: 1;
+}
+
+/* 체크박스: input 비표시, 아이콘만 표시 */
+.signup-agree__head .signup-agree__check-icon,
+.signup-agree__all-label .signup-agree__check-icon {
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+.signup-agree__input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.signup-agree__check-icon {
+  display: block;
+  width: 24px;
+  height: 24px;
+  background: var(--icon-checkbox-disabled);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: background 0.15s;
+}
+
+.signup-agree__head:has(.signup-agree__input:checked) .signup-agree__check-icon,
+.signup-agree__all-label:has(.signup-agree__input:checked) .signup-agree__check-icon {
+  background: var(--icon-checkbox-checked);
+}
+
+/* 약관 본문 박스 */
+.signup-agree__content {
+  padding: 30px;
+  background-color: var(--color-bg-white);
+  border: 1px solid var(--color-bg-line);
+  border-radius: 6px;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.signup-agree__content p {
+  margin: 0 0 10px;
+}
+
+.signup-agree__content p:last-child {
+  margin-bottom: 0;
+}
+
+/* 전체 동의 바: 텍스트+체크박스 한 label */
+.signup-agree__all {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 64px;
+  margin-top: 20px;
+  padding: 0 20px;
+  background-color: var(--color-gray-100);
+  border: 1px solid var(--color-bg-line);
+  border-radius: 6px;
+}
+
+.signup-agree__all:has(input:checked) {
+  background-color: var(--color-theme-sub-1);
+  border-color: var(--color-theme-primary);
+}
+
+.signup-agree__all-label {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  cursor: pointer;
+}
+
+.signup-agree__all-text {
+  flex: 1;
+  text-align: center;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1;
+  color: var(--color-text-main);
+  margin: 0;
+}
+
+/* 버튼 영역 */
+.signup-agree__actions {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-top: 60px;
+  justify-content: center;
+}
+
+.signup-agree__actions .c-btn {
+  flex: 1;
+}
+
+/* ========== 본인인증 / 정보입력 공통 (signup-section) ========== */
+.signup-section {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.signup-section__head {
+  margin-bottom: 40px;
+}
+
+.signup-section__title {
+  padding-bottom: 10px;
+  border-bottom: 1px solid  var(--color-bg-line);
+}
+
+.signup-section__desc {
+  margin-top: 20px;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.signup-section__form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.signup-section__form + .signup-section__form {
+  margin-top: 40px;
+  padding-block: 40px;
+  border-top: 1px solid var(--color-bg-line);
+  border-bottom: 1px solid var(--color-bg-line);
+}
+
+.signup-section__actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 60px;
+}
+
+.signup-section__actions .c-btn {
+  flex: 1;
+}
+
+/* ========== 가입완료 =========== */
+.signup-complete {
+  max-width: 860px;
+  margin: 0 auto;
+  padding-block: 40px;
+  text-align: center;
+}
+
+.signup-complete__visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signup-complete__img {
+  display: block;
+  max-width: 100%;
+  width: 240px;
+  height: 240px;
+  object-fit: contain;
+}
+
+.signup-complete__title {
+  margin-top: 50px;
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.signup-complete__desc {
+  margin-top: 30px;
+  font-size: 22px;
+}
+
+.signup-complete__benefits {
+  margin-top: 46px;
+  text-align: center;
+}
+
+.signup-complete__list {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 32px;
+  color: var(--color-text-main);
+  margin-bottom: 16px;
+}
+
+.signup-complete__list li {
+  margin-bottom: 4px;
+}
+
+.signup-complete__list li:last-child {
+  margin-bottom: 0;
+}
+
+.signup-complete__cta {
+  margin-top: 24px;
+  font-size: 24px;
+  line-height: 34px;
+  color: var(--color-text-main);
+}
+
+.signup-complete__actions {
+  margin-top: 60px;
+}
+
+.signup-complete__actions .c-btn {
+  min-width: 500px;
+}

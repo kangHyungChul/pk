@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>핀왕 - 쉽고 안전한 상품권 구매</title>
-  <!-- tokens.css, common.css 공통스타일 고정-->
+  <title>회원가입 - 핀왕</title>
+  <!-- tokens.css, common.css 공통스타일 고정 -->
   <link rel="stylesheet" href="css/tokens.css">
   <link rel="stylesheet" href="css/common.css">
-  <!-- result.css 결과 페이지 스타일 -->
-  <link rel="stylesheet" href="css/result.css">
+  <!-- signup.css 회원가입 스타일 -->
+  <link rel="stylesheet" href="css/signup.css">
 </head>
 <body>
 
@@ -25,10 +25,10 @@
           <li class="header__nav-item">
             <a href="#" class="header__nav-link">이용 가이드</a>
             <ul class="header__dropdown">
-              <li><a href="#">구매안내</a></li>
-              <li><a href="#">상품권 확인</a></li>
+              <li><a href="guide_buy.html">구매안내</a></li>
+              <li><a href="guide_confirm.html">상품권 확인</a></li>
               <li><a href="#">취소안내</a></li>
-              <li><a href="#">사용처</a></li>
+              <li><a href="guide_use.html">사용처</a></li>
             </ul>
           </li>
           <li class="header__nav-item">
@@ -43,69 +43,36 @@
       <div class="header__actions">
         <a href="#" class="c-btn header__btn-join">회원가입</a>
         <a href="#" class="header__link-login">로그인</a>
-        <!-- <a href="#" class="c-btn header__btn-join">마이페이지</a>
-        <a href="#" class="header__link-login">로그아웃</a> -->
       </div>
     </div>
   </header>
 
-  <main class="result">
+  <main class="signup">
+    <div class="page-width signup__inner">
 
-    <!-- 주문완료 -->
-    <div class="page-width result__inner">
-      <h2 class="result__title">상품권 결제가 완료되었습니다.</h2>
-
-      <div class="result__card">
-
-        <div class="result__card-inner">
-          <dl class="result__list">
-            <div class="result__row">
-              <dt class="result__label">상품권</dt>
-              <dd class="result__value">컬쳐랜드 상품권 1매</dd>
-            </div>
-            <div class="result__row">
-              <dt class="result__label">결제수단</dt>
-              <dd class="result__value">신용카드</dd>
-            </div>
-            <div class="result__row">
-              <dt class="result__label">결제금액</dt>
-              <dd class="result__value">50,000원</dd>
-            </div>
-            <div class="result__row">
-              <dt class="result__label">수신 휴대폰 번호</dt>
-              <dd class="result__value result__value--phone">01011112222</dd>
-            </div>
-          </dl>
+      <!-- 가입완료 -->
+      <div class="signup-complete">
+        <div class="signup-complete__visual">
+          <img src="assets/join_confirm.png" alt="" class="signup-complete__img">
         </div>
-
-        <div class="result__card-actions">
-          <a href="#" class="c-btn is-disabled">구매내역으로</a>
-          <a href="#" class="c-btn">확인</a>
+        <h2 class="signup-complete__title">회원가입이 완료되었습니다!</h2>
+        <p class="signup-complete__desc">
+          이제 핀왕에서 원하는 상품권을<br>
+          빠르고 간편하게 구매할 수 있어요.
+        </p>
+        <div class="signup-complete__benefits">
+          <ul class="signup-complete__list">
+            <li>- 다양한 인기 브랜드</li>
+            <li>- 간편한 결제 과정</li>
+          </ul>
+          <p class="signup-complete__cta">지금 바로 시작해보세요!</p>
         </div>
-        
+        <div class="signup-complete__actions">
+          <a href="#" class="c-btn">상품권 구매하러 가기</a>
+        </div>
       </div>
+
     </div>
-
-    <!-- 주문실패 -->
-    <!--
-    <div class="page-width result__inner">
-      <h2 class="result__title">상품권 결제가 실패되었습니다.</h2>
-
-      <div class="result__card">
-
-        <div class="result__card-inner">
-          <p class="result__card-fail">실패사유: 카드 승인 거절</p>
-        </div>
-
-        <div class="result__card-actions">
-          <a href="#" class="c-btn is-disabled">이전으로</a>
-          <a href="#" class="c-btn">확인</a>
-        </div>
-        
-      </div>
-    </div>
-    -->
-
   </main>
 
   <!-- 푸터 -->

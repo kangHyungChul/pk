@@ -23,12 +23,17 @@
   --color-bg-white: #ffffff;
   --color-bg-line: #dfdfdf;
   --color-bg-box: #dce3ec;
+  --color-bg-gray: #f8f8f8;
 
   /* Button */
   --color-btn-enabled: #3f92f6;
   --color-btn-disabled: #d0d7e0;
 
   --font-family-base: "Pretendard", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+  /* gutter */
+  --page-gutter: 60px 0 80px;
+  --inner-x: 40px;
 
   /* icon */
   --icon-plus: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><g clip-path="url(%23clip0_4620_2411)"><path d="M12 4V20" stroke="%232C2C2C" stroke-width="2" stroke-linejoin="round"/><path d="M4 12H20" stroke="%232C2C2C" stroke-width="2" stroke-linejoin="round"/></g><defs><clipPath id="clip0_4620_2411"><rect width="24" height="24" fill="white"/></clipPath></defs></svg>');

@@ -56,7 +56,18 @@
 
 ---
 
-## 5. 브레이크포인트 다이어그램
+## 5. margin / padding / border 작성 지침
+
+- **margin, padding**
+  - **한 방향만** 쓸 때 → 단일 속성 사용. 예: `margin-bottom: 8px`, `padding-top: 10px`
+  - **두 방향 이상** 쓸 때 → shorthand 사용. 예: `margin: 0`, `padding: 50px 40px 80px`
+- **border** → shorthand 그대로 사용. 예: `border: 1px solid var(--color-bg-line)` (분리하지 않음)
+- **불필요한 스타일 제거:** 사용하지 않는 규칙, 중복·과도한 리셋은 제거한다.
+- **앞으로 작성하는 모든 CSS** (guide.css, policy.css, detail.css 등) 에 동일 지침 적용.
+
+---
+
+## 6. 브레이크포인트 다이어그램
 
 ```
 [ PC: 1201px 이상 (기본) ]  →  [ 태블릿: max-width 1200px ]  →  [ 모바일: max-width 560px ]
@@ -64,7 +75,7 @@
 
 ---
 
-## 6. 다른 환경에서 이어서 작업할 때
+## 7. 다른 환경에서 이어서 작업할 때
 
 1. **CSS 파일 순서** — `tokens.css` → `common.css` → `styles.css` 유지
 2. **새 페이지 스타일** — `main.css`에 각 페이지별 PC 스타일 먼저, 그다음 `@media (max-width: 1199px)`, `@media (max-width: 560px)` 블록에 추가

@@ -1,0 +1,86 @@
+/* 정책 페이지: 개인정보처리방침, 서비스이용약관 */
+
+.policy {
+  padding: var(--page-gutter);
+}
+
+.policy__inner {
+  padding: 50px var(--inner-x) 80px;
+  background-color: var(--color-bg-white);
+  border-radius: 6px;
+}
+
+/* 페이지 제목 */
+.policy__title {
+  margin-bottom: 50px;
+  font-family: var(--font-family-base);
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1;
+  color: var(--color-text-main);
+}
+
+/* 시행일 */
+.policy__date {
+  font-family: var(--font-family-base);
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 34px;
+  color: var(--color-text-main);
+}
+
+
+/* 본문 */
+.policy__body {
+  margin-top: 16px;
+  padding-top: 40px;
+  border-top: 1px solid var(--color-bg-line);
+  color: var(--color-gray-500);
+}
+
+/* 본문 소제목 */
+.policy__subtitle {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 32px;
+  color: var(--color-gray-500);
+  margin: 0 0 26px;
+}
+
+/* 조/항 제목 */
+.policy__section {
+  margin-bottom: 26px;
+}
+
+.policy__section:last-child {
+  margin-bottom: 0;
+}
+
+.policy__section-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  color: var(--color-text-main);
+  margin: 0 0 8px;
+}
+
+/* 조/항 본문 */
+.policy__section-body {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: var(--color-gray-500);
+}
+
+.policy__section-body p {
+  margin: 0 0 4px;
+}
+
+.policy__section-body p:last-child {
+  margin-bottom: 0;
+}
+
+.policy__section-body strong {
+  font-weight: 500;
+  color: var(--color-text-main);
+}

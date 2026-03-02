@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>아이디 찾기 - 핀왕</title>
+  <!-- tokens.css, common.css 공통스타일 고정 -->
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/common.css">
+  <!-- users.css 로그인 스타일 -->
+  <link rel="stylesheet" href="css/users.css">
+</head>
+<body>
+
+  <!-- 헤더 -->
+  <header class="header">
+    <div class="page-width header__inner">
+      <h1 class="header__logo">
+        <a href="/" aria-label="핀왕 홈">
+          <img src="assets/logo.png" alt="핀왕" class="header__logo-img">
+        </a>
+      </h1>
+      <nav class="header__nav" aria-label="주 메뉴">
+        <ul class="header__nav-list">
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link">이용 가이드</a>
+            <ul class="header__dropdown">
+              <li><a href="guide_buy.html">구매안내</a></li>
+              <li><a href="guide_confirm.html">상품권 확인</a></li>
+              <li><a href="#">취소안내</a></li>
+              <li><a href="guide_use.html">사용처</a></li>
+            </ul>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link">고객센터</a>
+            <ul class="header__dropdown">
+              <li><a href="#">공지사항</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__actions">
+        <a href="#" class="c-btn header__btn-join">회원가입</a>
+        <a href="#" class="header__link-login">로그인</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="users">
+    <div class="page-width users__inner">
+
+      <h2 class="page-header users__title">아이디 찾기</h2>
+
+      <div class="users__content">
+
+        <div class="users__form">
+          <div class="form-title">
+            <p>핀왕에 가입하신 정보를 입력해 주세요.</p>
+          </div>
+          <div class="form-group form-group--row">
+            <label class="form-group__label" for="name">이름</label>
+            <div class="form-group__field">
+              <input type="text" class="c-input" id="name" name="name" placeholder="이름을 입력해 주세요." autocomplete="name">
+            </div>
+          </div>
+          <div class="form-group form-group--row">
+            <label class="form-group__label" for="phone">휴대폰 번호</label>
+            <div class="form-group__field">
+              <input type="password" class="c-input" id="phone" name="phone" placeholder="- 없이 번호만 입력해주세요." autocomplete="phone">
+            </div>
+          </div>
+          <div class="users__actions">
+            <!-- disabled상태 (버튼 비활성화) -->
+            <button type="button" class="c-btn" disabled>확인</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- 푸터 -->
+  <footer class="footer">
+    <div class="footer__top page-width">
+      <a href="#" class="footer__link">이용약관</a>
+      <a href="#" class="footer__link">개인정보처리방침</a>
+    </div>
+    <div class="footer__bottom">
+      <div class="page-width footer__inner">
+        <img src="assets/logo_gray.png" alt="핀왕" class="footer__logo">
+        <div class="footer__info">
+          <p class="footer__text">(주)호라이즌테크놀러지 | 대표: 김경호 | 대표번호 1670-2983 평일 10:00 ~ 17:00 (점심시간 12:30 ~ 13:30) / 공휴일 휴무</p>
+          <p class="footer__text">주소: 서울특별시 강서구 양천로 583, B동 1101호 (염창동, 우림블루나인센터)</p>
+          <p class="footer__text">사업자등록번호: 220-86-93669 통신판매신고번호: 2018-서울강서-0830호</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 로그인 알림 모달 -->
+  <div class="modal" id="loginAlertModal" hidden aria-modal="true" aria-labelledby="loginAlertModalTitle" role="dialog">
+    <div class="modal__dialog">
+      <div class="modal__content">
+        <h3 class="modal__title" id="loginAlertModalTitle">알림</h3>
+        <div class="modal__message">
+          <p>입력하신 아이디 또는 비밀번호가 일치하지 않습니다.</p>
+          <p>확인 후 다시 입력해 주세요.</p>
+          <p>5회 이상 오류 시 로그인이 제한될 수 있습니다.</p>
+        </div>
+        <div class="modal__actions">
+          <button type="button" class="c-btn" data-modal-close>확인</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/common.js"></script>
+</body>
+</html>

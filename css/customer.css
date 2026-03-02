@@ -1,0 +1,319 @@
+/* 고객센터: 공지사항 목록 등 */
+
+/* 레이아웃 */
+.customer {
+  padding: var(--page-gutter);
+}
+
+.customer__inner {
+  position: relative;
+  padding: 50px var(--inner-x) 80px;
+  background-color: var(--color-bg-white);
+  border-radius: 6px;
+}
+
+/* 공지 공통: 페이지 제목 영역 */
+.notice_head {
+  margin-bottom: 64px;
+}
+
+.notice_title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1;
+  color: var(--color-text-main);
+}
+
+/* 공지 목록 (ul/li) */
+.notice-list {
+  border-top: 1px solid var(--color-theme-primary);
+}
+
+.notice-list__row {
+  display: flex; 
+  align-items: center;
+  gap: 14%;
+  padding: 20px 40px;
+  border-bottom: 1px solid var(--color-bg-line);
+}
+
+.notice-list__head {
+  background-color: var(--color-bg-gray);
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--color-gray-500);
+}
+
+.notice-list__row {
+  background-color: var(--color-bg-white);
+  transition: background-color 0.2s;
+}
+
+.notice-list__row:hover {
+  background-color: var(--color-theme-sub-1);
+}
+
+.notice-list__row-inner {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex: 1;
+}
+
+/* 목록 열 */
+.notice-list__num {
+  flex-shrink: 0;
+  width: 52px;
+  font-size: 16px;
+  text-align: center;
+  font-weight: 500;
+  color: var(--color-gray-500);
+}
+
+.notice_item_title,
+.notice-list__title-link {
+  flex: 1;
+  font-size: 16px;
+  color: var(--color-text-main);
+  text-align: left;
+}
+
+.notice-list__title-link:hover {
+  text-decoration: underline;
+}
+
+.notice-list__head .notice_item_title {
+  flex: 1;
+}
+
+/* 공지 공통: 날짜 */
+.notice_date {
+  flex-shrink: 0;
+  width: 100px;
+  font-size: 14px;
+  color: var(--color-gray-400);
+  text-align: right;
+}
+
+.notice-list__head .notice_date {
+  text-align: right;
+}
+
+/* 공지 공통: 뱃지(점검/안내/공지 등) */
+.notice_badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  padding-block: 6px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1;
+  border: 1px solid var(--color-bg-line);
+  background-color: var(--color-bg-line);
+  border-radius: 4px;
+}
+
+.notice_badge--notice {
+  width: 52px;
+  color: var(--color-theme-primary);
+  border-color: var(--color-theme-primary);
+  background-color: var(--color-bg-white);
+}
+
+.notice-list__count {
+  margin-bottom: 24px;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.notice-list__count-num {
+  color: var(--color-theme-primary); 
+}
+
+/* 목록-페이지네이션 간격 */
+.notice-list + .pagination {
+  margin-top: 40px;
+}
+
+/* 공지 상세 페이지 */
+.notice-detail__head {
+  border-top: 1px solid var(--color-theme-primary);
+  background-color: var(--color-bg-white);
+}
+
+.notice-detail__head-inner {
+  display: flex; 
+  align-items: center;
+  gap: 10px;
+  padding: 20px 40px;
+  background-color: var(--color-bg-white);
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--color-gray-500);
+}
+
+.notice-detail__body {
+  padding: 24px 40px;
+  font-size: 18px;
+  line-height: 26px;
+  color: var(--color-text-main);
+  border-top: 1px solid var(--color-bg-line);
+  border-bottom: 1px solid var(--color-bg-line);
+}
+
+.notice-detail__body p {
+  margin-bottom: 10px;
+}
+
+.notice-detail__body p:last-child {
+  margin-bottom: 0;
+}
+
+.notice-detail__actions {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.notice-detail__actions .c-btn {
+  min-width: 500px;
+}
+
+/* FAQ 탭 (Figma 4744-3968) */
+.faq-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+.faq-tab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 150px;
+  height: 40px;
+  padding: 10px 20px;
+  font-family: var(--font-family-base);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1;
+  color: var(--color-text-main);
+  background-color: var(--color-gray-200);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.faq-tab:hover {
+  background-color: var(--color-gray-300);
+  color: var(--color-text-main);
+}
+
+.faq-tab.is-active {
+  color: var(--color-text-white);
+  background-color: var(--color-theme-primary);
+}
+
+.faq-tab.is-active:hover {
+  background-color: var(--color-theme-sub-2);
+  color: var(--color-text-white);
+}
+
+/* FAQ 리스트 상단 여백 (탭과 리스트 사이) */
+.faq-tabs + .faq {
+  margin-top: 20px;
+  border-top: 1px solid var(--color-bg-line);
+}
+
+/* FAQ 아코디언 */
+.faq {
+  border-top: 1px solid var(--color-bg-line);
+}
+
+.faq__item {
+  border-bottom: 1px solid var(--color-bg-line);
+}
+
+.faq__trigger {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  width: 100%;
+  min-height: 80px;
+  padding: 20px 40px;
+  text-align: left;
+  background-color: var(--color-bg-white);
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.faq__trigger:hover {
+  background-color: var(--color-theme-sub-1);
+}
+
+.faq__trigger[aria-expanded="true"] .faq__icon {
+  transform: rotate(180deg);
+}
+
+.faq__q {
+  flex-shrink: 0;
+  width: 52px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1;
+  color: var(--color-btn-disabled);
+  text-align: center;
+}
+
+.faq__question {
+  flex: 1;
+  font-weight: 500;
+  font-size: 18px;
+  color: var(--color-text-main);
+}
+
+.faq__icon {
+  flex-shrink: 0;
+  width: 30px;
+  height: 30px;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="18" height="10" viewBox="0 0 18 10" fill="none"><path d="M1 1L9 9L17 1" stroke="%23777777" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>') no-repeat center;
+  background-size: 18px 10px;
+  transition: transform 0.2s;
+}
+
+.faq__panel {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 30px 40px;
+  background-color: var(--color-theme-sub-1);
+  border-top: 1px solid var(--color-bg-line);
+}
+
+.faq__panel[hidden] {
+  display: none;
+}
+
+.faq__a {
+  flex-shrink: 0;
+  width: 52px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1;
+  color: var(--color-theme-primary);
+  text-align: center;
+}
+
+.faq__answer {
+  flex: 1;
+  font-size: 18px;
+  line-height: 26px;
+  color: var(--color-text-main);
+}

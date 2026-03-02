@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>핀왕 - 쉽고 안전한 상품권 구매</title>
-  <!-- tokens.css, common.css 공통스타일 고정-->
+  <title>공지사항 - 핀왕</title>
+  <!-- tokens.css, common.css 공통스타일 고정 -->
   <link rel="stylesheet" href="css/tokens.css">
   <link rel="stylesheet" href="css/common.css">
-  <!-- result.css 결과 페이지 스타일 -->
-  <link rel="stylesheet" href="css/result.css">
+  <!-- customer.css 고객센터(공지사항 등) 스타일 -->
+  <link rel="stylesheet" href="css/customer.css">
 </head>
 <body>
 
@@ -25,10 +25,10 @@
           <li class="header__nav-item">
             <a href="#" class="header__nav-link">이용 가이드</a>
             <ul class="header__dropdown">
-              <li><a href="#">구매안내</a></li>
-              <li><a href="#">상품권 확인</a></li>
+              <li><a href="guide_buy.html">구매안내</a></li>
+              <li><a href="guide_confirm.html">상품권 확인</a></li>
               <li><a href="#">취소안내</a></li>
-              <li><a href="#">사용처</a></li>
+              <li><a href="guide_use.html">사용처</a></li>
             </ul>
           </li>
           <li class="header__nav-item">
@@ -43,69 +43,45 @@
       <div class="header__actions">
         <a href="#" class="c-btn header__btn-join">회원가입</a>
         <a href="#" class="header__link-login">로그인</a>
-        <!-- <a href="#" class="c-btn header__btn-join">마이페이지</a>
-        <a href="#" class="header__link-login">로그아웃</a> -->
       </div>
     </div>
   </header>
 
-  <main class="result">
+  <main class="customer">
+    <div class="page-width customer__inner">
 
-    <!-- 주문완료 -->
-    <div class="page-width result__inner">
-      <h2 class="result__title">상품권 결제가 완료되었습니다.</h2>
-
-      <div class="result__card">
-
-        <div class="result__card-inner">
-          <dl class="result__list">
-            <div class="result__row">
-              <dt class="result__label">상품권</dt>
-              <dd class="result__value">컬쳐랜드 상품권 1매</dd>
-            </div>
-            <div class="result__row">
-              <dt class="result__label">결제수단</dt>
-              <dd class="result__value">신용카드</dd>
-            </div>
-            <div class="result__row">
-              <dt class="result__label">결제금액</dt>
-              <dd class="result__value">50,000원</dd>
-            </div>
-            <div class="result__row">
-              <dt class="result__label">수신 휴대폰 번호</dt>
-              <dd class="result__value result__value--phone">01011112222</dd>
-            </div>
-          </dl>
-        </div>
-
-        <div class="result__card-actions">
-          <a href="#" class="c-btn is-disabled">구매내역으로</a>
-          <a href="#" class="c-btn">확인</a>
-        </div>
-        
+      <!-- 공지사항 제목 -->
+      <div class="notice_head">
+        <h2 class="notice_title">공지사항</h2>
       </div>
-    </div>
 
-    <!-- 주문실패 -->
-    <!--
-    <div class="page-width result__inner">
-      <h2 class="result__title">상품권 결제가 실패되었습니다.</h2>
+      <!-- 공지 상세 본문 -->
+      <div class="notice-detail">
 
-      <div class="result__card">
-
-        <div class="result__card-inner">
-          <p class="result__card-fail">실패사유: 카드 승인 거절</p>
+        <div class="notice-detail__head">
+          <div class="notice-detail__head-inner">
+            <span class="notice_badge">점검</span>
+            <p class="notice_item_title">
+              2024.10.25(금) 2시~4시 서버 점검 안내 (점검완료)
+            </p>
+            <span class="notice_date">2024.01.01</span>
+          </div>
         </div>
 
-        <div class="result__card-actions">
-          <a href="#" class="c-btn is-disabled">이전으로</a>
-          <a href="#" class="c-btn">확인</a>
+        <div class="notice-detail__body">
+          <p>안정적인 서비스 제공을 위한 시스템 점검이 아래 일정으로 진행됩니다.</p>
+          <p>점검 일시: 2025년 11월 30일(금) 오전 2시 ~ 오전 6시</p>
+          <p>해당 시간 동안 상품권 구매 및 마이페이지 이용이 일시적으로 제한됩니다.<br>불편을 드려 죄송하며, 더욱 나은 서비스를 위해 최선을 다하겠습니다.</p>
         </div>
-        
+
       </div>
-    </div>
-    -->
 
+      <!-- 목록 버튼 (공통 c-btn) -->
+      <div class="notice-detail__actions">
+        <a href="notice_list.html" class="c-btn">목록</a>
+      </div>
+
+    </div>
   </main>
 
   <!-- 푸터 -->
