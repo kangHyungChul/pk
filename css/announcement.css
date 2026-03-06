@@ -1,0 +1,62 @@
+body {
+    background-color: var(--color-bg-gray);
+}
+
+.announcement {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.announcement__card {
+    flex: 1;
+    max-width: 1200px;
+    background-color: var(--color-bg-white);
+}
+
+/* 상단 배경 이미지 영역 */
+.announcement__header {
+    height: 400px;
+    background: url('../assets/img-pinwang-system_settings.png') center top / auto 100% no-repeat;
+}
+
+.announcement__body {
+    padding: 60px 40px 80px;
+    text-align: center;
+}
+
+/* 타이틀: Gmarket Sans Bold */
+.announcement__title {
+    font-family: var(--font-family-gmarket);
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 82px;
+    margin-bottom: 40px;
+}
+
+.announcement__title-brand {
+    display: block;
+    color: var(--color-theme-primary);
+}
+
+.announcement__title-text {
+    display: block;
+    color: var(--color-text-main);
+}
+
+/* 본문 텍스트 */
+.announcement__content {
+    font-size: 30px;
+    line-height: 40px;
+    color: #000;
+}
+
+.announcement__content p {
+    margin-bottom: 40px;
+}
+
+.announcement__content p:last-child {
+    margin-bottom: 0;
+}

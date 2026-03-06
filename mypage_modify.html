@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>회원정보 수정 - 핀왕</title>
+  <!-- tokens.css, common.css 공통스타일 고정 -->
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/common.css">
+  <!-- users.css 로그인 스타일 -->
+  <link rel="stylesheet" href="css/mypage.css">
+</head>
+<body>
+
+  <!-- 헤더 -->
+  <header class="header">
+    <div class="page-width header__inner">
+      <h1 class="header__logo">
+        <a href="/" aria-label="핀왕 홈">
+          <img src="assets/logo.png" alt="핀왕" class="header__logo-img">
+        </a>
+      </h1>
+      <nav class="header__nav" aria-label="주 메뉴">
+        <ul class="header__nav-list">
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link">이용 가이드</a>
+            <ul class="header__dropdown">
+              <li><a href="guide_buy.html">구매안내</a></li>
+              <li><a href="guide_confirm.html">상품권 확인</a></li>
+              <li><a href="#">취소안내</a></li>
+              <li><a href="guide_use.html">사용처</a></li>
+            </ul>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link">고객센터</a>
+            <ul class="header__dropdown">
+              <li><a href="#">공지사항</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__actions">
+        <a href="#" class="c-btn header__btn-join">회원가입</a>
+        <a href="#" class="header__link-login">로그인</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="mypage">
+    <div class="page-width mypage__inner">
+
+      <h2 class="page-header mypage__title">회원정보</h2>
+
+      <div class="mypage-modify__form">
+
+        <!-- 아이디 (읽기전용) -->
+        <div class="form-group form-group--row">
+          <span class="form-group__label" id="mypage-label-id">아이디</span>
+          <div class="form-group__field">
+            <span class="c-blank-text" aria-labelledby="mypage-label-id">idid0505123</span>
+          </div>
+        </div>
+
+        <!-- 이름 (읽기전용) -->
+        <div class="form-group form-group--row">
+          <span class="form-group__label" id="mypage-label-name">이름</span>
+          <div class="form-group__field">
+            <span class="c-blank-text" aria-labelledby="mypage-label-name">홍길동</span>
+          </div>
+        </div>
+
+        <!-- 휴대폰 번호: input + 변경하기 버튼 -->
+        <div class="form-group form-group--row">
+          <span class="form-group__label" id="mypage-label-phone">휴대폰 번호</span>
+          <div class="form-group__field form-group__field--with-btn">
+            <input type="tel" class="c-input" id="mypage-phone" value="01011112222" readonly disabled aria-labelledby="mypage-label-phone">
+            <button type="button" class="c-btn c-btn--white" data-modal-open="phoneChangeModal">변경하기</button>
+          </div>
+        </div>
+
+        <!-- 비밀번호: input + 변경하기 버튼 -->
+        <div class="form-group form-group--row">
+          <span class="form-group__label" id="mypage-label-pw">비밀번호</span>
+          <div class="form-group__field form-group__field--with-btn">
+            <input type="password" class="c-input" id="mypage-pw" value="**********" readonly disabled aria-labelledby="mypage-label-pw" autocomplete="off">
+            <button type="button" class="c-btn c-btn--white">변경하기</button>
+          </div>
+        </div>
+
+        <!-- 마케팅 정보: 문자/알림톡 수신 라디오 -->
+        <div class="form-group form-group--row">
+          <span class="form-group__label" id="mypage-label-marketing">마케팅 정보</span>
+          <div class="form-group__field mypage-modify__radio-wrap" role="radiogroup" aria-labelledby="mypage-label-marketing">
+            <span class="mypage-modify__radio-caption">문자/알림톡 수신</span>
+            <div class="c-radio-group">
+              <label class="c-radio-item">
+                <input type="radio" name="marketing_agree" value="Y" class="c-radio-input" checked>
+                <span class="c-radio-text">동의</span>
+                <span class="c-radio-icon" aria-hidden="true"></span>
+              </label>
+              <label class="c-radio-item">
+                <input type="radio" name="marketing_agree" value="N" class="c-radio-input">
+                <span class="c-radio-text">미동의</span>
+                <span class="c-radio-icon" aria-hidden="true"></span>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <!-- 회원탈퇴: 라벨 + 탈퇴하기 버튼만 -->
+        <div class="form-group form-group--row">
+          <span class="form-group__label" id="mypage-label-withdraw">회원탈퇴</span>
+          <div class="form-group__field form-group__field--with-btn">
+            <a href="#" class="c-btn c-btn--white">탈퇴하기</a>
+          </div>
+        </div>
+
+        <!-- 저장 버튼 -->
+        <div class="mypage-modify__actions">
+          <button type="button" class="c-btn">저장</button>
+        </div>
+
+      </div>
+
+
+    </div>
+  </main>
+
+  <!-- 푸터 -->
+  <footer class="footer">
+    <div class="footer__top page-width"> 
+      <a href="#" class="footer__link">이용약관</a>
+      <a href="#" class="footer__link">개인정보처리방침</a>
+    </div>
+    <div class="footer__bottom">
+      <div class="page-width footer__inner">
+        <img src="assets/logo_gray.png" alt="핀왕" class="footer__logo">
+        <div class="footer__info">
+          <p class="footer__text">(주)호라이즌테크놀러지 | 대표: 김경호 | 대표번호 1670-2983 평일 10:00 ~ 17:00 (점심시간 12:30 ~ 13:30) / 공휴일 휴무</p>
+          <p class="footer__text">주소: 서울특별시 강서구 양천로 583, B동 1101호 (염창동, 우림블루나인센터)</p>
+          <p class="footer__text">사업자등록번호: 220-86-93669 통신판매신고번호: 2018-서울강서-0830호</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 휴대폰 번호 변경 모달 (본인인증/변경 폼) -->
+  <div class="modal modal--lg" id="phoneChangeModal" hidden aria-modal="true" aria-labelledby="phoneChangeModalTitle" role="dialog">
+    <div class="modal__dialog">
+      <div class="modal__content modal-phone__content">
+        <div class="modal-phone__body">
+          <div class="modal-phone__head">
+            <img src="assets/logo.png" alt="핀왕" class="modal-phone__logo">
+            <p class="modal-phone__intro" id="phoneChangeModalTitle">
+              전화번호 변경을 위해 고객님의 회원정보 확인이 필요합니다.<br>
+              변경하실 휴대폰 번호를 입력해 주세요.
+            </p>
+          </div>
+          <div class="modal-phone__form">
+            <div class="form-group form-group--row">
+              <span class="form-group__label">아이디</span>
+              <div class="form-group__field">
+                <span class="c-blank-text">idid0505123</span>
+              </div>
+            </div>
+            <div class="form-group form-group--row">
+              <span class="form-group__label">이름</span>
+              <div class="form-group__field">
+                <span class="c-blank-text">홍길동</span>
+              </div>
+            </div>
+            <div class="form-group form-group--row is-error">
+              <span class="form-group__label" id="phoneChangeModal-phone-label">휴대폰 번호</span>
+              <div class="form-group__field">
+                <input type="tel" class="c-input" id="phoneChangeModal-phone" placeholder="휴대폰 번호" aria-labelledby="phoneChangeModal-phone-label" aria-describedby="phoneChangeModal-phone-error" autocomplete="tel">
+                <span class="form-group__error" id="phoneChangeModal-phone-error">휴대폰 번호를 입력해 주세요.</span>
+              </div>
+            </div>
+          </div>
+          <div class="modal__actions">
+            <button type="button" class="c-btn c-btn--white" data-modal-close>취소</button>
+            <button type="button" class="c-btn">변경</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 로그인 알림 모달 -->
+  <div class="modal" id="loginAlertModal" hidden aria-modal="true" aria-labelledby="loginAlertModalTitle" role="dialog">
+    <div class="modal__dialog">
+      <div class="modal__content">
+        <h3 class="modal__title" id="loginAlertModalTitle">알림</h3>
+        <div class="modal__message">
+          <p>입력하신 아이디 또는 비밀번호가 일치하지 않습니다.</p>
+          <p>확인 후 다시 입력해 주세요.</p>
+          <p>5회 이상 오류 시 로그인이 제한될 수 있습니다.</p>
+        </div>
+        <div class="modal__actions">
+          <button type="button" class="c-btn" data-modal-close>확인</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/common.js"></script>
+</body>
+</html>

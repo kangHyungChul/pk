@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>회원탈퇴 - 핀왕</title>
+  <!-- tokens.css, common.css 공통스타일 고정 -->
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/common.css">
+  <!-- users.css 로그인 스타일 -->
+  <link rel="stylesheet" href="css/mypage.css">
+</head>
+<body>
+
+  <!-- 헤더 -->
+  <header class="header">
+    <div class="page-width header__inner">
+      <h1 class="header__logo">
+        <a href="/" aria-label="핀왕 홈">
+          <img src="assets/logo.png" alt="핀왕" class="header__logo-img">
+        </a>
+      </h1>
+      <nav class="header__nav" aria-label="주 메뉴">
+        <ul class="header__nav-list">
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link">이용 가이드</a>
+            <ul class="header__dropdown">
+              <li><a href="guide_buy.html">구매안내</a></li>
+              <li><a href="guide_confirm.html">상품권 확인</a></li>
+              <li><a href="#">취소안내</a></li>
+              <li><a href="guide_use.html">사용처</a></li>
+            </ul>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link">고객센터</a>
+            <ul class="header__dropdown">
+              <li><a href="#">공지사항</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__actions">
+        <a href="#" class="c-btn header__btn-join">회원가입</a>
+        <a href="#" class="header__link-login">로그인</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="mypage">
+    <div class="page-width mypage__inner">
+
+      <h2 class="page-header mypage__title">회원정보</h2>
+
+      <div class="mypage-modify__form">
+        <!-- 섹션 제목: 회원탈퇴 + 구분선 -->
+        <h3 class="mypage-modify__section-title">회원탈퇴</h3>
+
+        <!-- 탈퇴 시 삭제 안내 문구 -->
+        <div class="mypage-modify__withdrawal-info">
+          <strong>탈퇴 시, 아래 정보는 모두 삭제되며 복구할 수 없습니다.</strong>
+          <p>- 구매한 상품권 정보</p>
+          <p>- 사용 내역 및 잔여 상품권</p>
+          <p>- 가입된 계정과 모든 회원정보</p>
+          <em>탈퇴 후에도 관련 법령에 따라 일부 거래 정보는 일정 기간 보관됩니다.</em>
+        </div>
+
+        <!-- 아이디 (읽기전용) -->
+        <div class="form-group form-group--row">
+          <span class="form-group__label">아이디</span>
+          <div class="form-group__field">
+            <span class="c-blank-text">IDIDIDIDID</span>
+          </div>
+        </div>
+        <!-- 생년월일 (읽기전용) -->
+        <div class="form-group form-group--row">
+          <span class="form-group__label">생년월일</span>
+          <div class="form-group__field">
+            <span class="c-blank-text">홍길동</span>
+          </div>
+        </div>
+        <!-- 휴대폰 번호 (읽기전용) -->
+        <div class="form-group form-group--row">
+          <span class="form-group__label">휴대폰 번호</span>
+          <div class="form-group__field">
+            <span class="c-blank-text">01011112222</span>
+          </div>
+        </div>
+        <!-- 비밀번호 (에러 노출용 is-error) -->
+        <div class="form-group form-group--row is-error">
+          <label class="form-group__label" for="withdrawal-pw">비밀번호</label>
+          <div class="form-group__field">
+            <input type="password" class="c-input" id="withdrawal-pw" name="withdrawal_password" placeholder="비밀번호를 입력해 주세요." autocomplete="current-password" aria-describedby="withdrawal-pw-error">
+            <span class="form-group__error" id="withdrawal-pw-error">비밀번호가 일치하지 않습니다.</span>
+          </div>
+        </div>
+        <!-- 탈퇴사유 + 예시 문구 -->
+        <div class="form-group form-group--row">
+          <label class="form-group__label" for="withdrawal-reason">탈퇴사유</label>
+          <div class="form-group__field">
+            <input type="text" class="c-input" id="withdrawal-reason" name="withdrawal_reason" placeholder="탈퇴사유를 10자 이상 입력해 주세요." aria-describedby="withdrawal-reason-hint">
+            <span class="form-group__hint" id="withdrawal-reason-hint">예시) 더이상 사용할 일이 없습니다.</span>
+          </div>
+        </div>
+
+        <!-- 탈퇴 확인 체크박스 -->
+        <label class="mypage-modify__confirm-box">
+          <input type="checkbox" class="mypage-modify__radio-input" name="withdrawal_confirm" aria-describedby="withdrawal-confirm-text">
+          <span class="mypage-modify__confirm-text" id="withdrawal-confirm-text">탈퇴 시 계정 및 이용 기록은 복구할 수 없음을 확인했습니다.</span>
+          <span class="mypage-modify__radio-icon" aria-hidden="true"></span>
+        </label>
+
+        <!-- 버튼: 모든 정보 삭제 후 탈퇴 / 취소 -->
+        <div class="mypage-modify__actions">
+          <button type="button" class="c-btn c-btn--white">모든 정보 삭제 후 탈퇴</button>
+          <button type="button" class="c-btn">취소</button>
+        </div>
+      </div>
+
+
+    </div>
+  </main>
+
+  <!-- 푸터 -->
+  <footer class="footer">
+    <div class="footer__top page-width"> 
+      <a href="#" class="footer__link">이용약관</a>
+      <a href="#" class="footer__link">개인정보처리방침</a>
+    </div>
+    <div class="footer__bottom">
+      <div class="page-width footer__inner">
+        <img src="assets/logo_gray.png" alt="핀왕" class="footer__logo">
+        <div class="footer__info">
+          <p class="footer__text">(주)호라이즌테크놀러지 | 대표: 김경호 | 대표번호 1670-2983 평일 10:00 ~ 17:00 (점심시간 12:30 ~ 13:30) / 공휴일 휴무</p>
+          <p class="footer__text">주소: 서울특별시 강서구 양천로 583, B동 1101호 (염창동, 우림블루나인센터)</p>
+          <p class="footer__text">사업자등록번호: 220-86-93669 통신판매신고번호: 2018-서울강서-0830호</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/common.js"></script>
+</body>
+</html>

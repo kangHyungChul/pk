@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>구매내역 - 핀왕</title>
+  <!-- tokens.css, common.css 공통스타일 고정 -->
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/common.css">
+  <!-- users.css 로그인 스타일 -->
+  <link rel="stylesheet" href="css/mypage.css">
+</head>
+<body>
+
+  <!-- 헤더 -->
+  <header class="header">
+    <div class="page-width header__inner">
+      <h1 class="header__logo">
+        <a href="/" aria-label="핀왕 홈">
+          <img src="assets/logo.png" alt="핀왕" class="header__logo-img">
+        </a>
+      </h1>
+      <nav class="header__nav" aria-label="주 메뉴">
+        <ul class="header__nav-list">
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link">이용 가이드</a>
+            <ul class="header__dropdown">
+              <li><a href="guide_buy.html">구매안내</a></li>
+              <li><a href="guide_confirm.html">상품권 확인</a></li>
+              <li><a href="#">취소안내</a></li>
+              <li><a href="guide_use.html">사용처</a></li>
+            </ul>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link">고객센터</a>
+            <ul class="header__dropdown">
+              <li><a href="#">공지사항</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__actions">
+        <a href="#" class="c-btn header__btn-join">회원가입</a>
+        <a href="#" class="header__link-login">로그인</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="mypage">
+    <div class="page-width mypage__inner">
+
+      <h2 class="page-header mypage__title">구매내역</h2>
+
+      <p class="mypage-history__subtitle">최근 3개월 간의 구매내역만 조회 가능합니다.</p>
+
+      <div class="mypage-history__table-wrap">
+        <table class="mypage-history__table">
+          <colgroup>
+            <col class="mypage-history__cell--date">
+            <col class="mypage-history__cell--product">
+            <col class="mypage-history__cell--amount">
+            <col class="mypage-history__cell--payment">
+            <col class="mypage-history__cell--detail">
+          </colgroup>
+          <thead>
+            <tr>
+              <th class="mypage-history__cell--date" scope="col">주문일시</th>
+              <th class="mypage-history__cell--product" scope="col">상품권</th>
+              <th class="mypage-history__cell--amount" scope="col">상품금액</th>
+              <th class="mypage-history__cell--payment" scope="col">결제금액/결제수단</th>
+              <th class="mypage-history__cell--detail" scope="col">내역</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="mypage-history__cell--date">2025.11.30 15:13:01</td>
+              <td class="mypage-history__cell--product">컬쳐랜드 상품권</td>
+              <td class="mypage-history__cell--amount">30,000</td>
+              <td class="mypage-history__cell--payment">30,900 (휴대폰)</td>
+              <td class="mypage-history__cell--detail"><a href="#">상세</a></td>
+            </tr>
+            <tr>
+              <td class="mypage-history__cell--date">2025.12.01 08:21:10</td>
+              <td class="mypage-history__cell--product">구글 기프트코드</td>
+              <td class="mypage-history__cell--amount">500,000</td>
+              <td class="mypage-history__cell--payment">500,000 (국민카드)</td>
+              <td class="mypage-history__cell--detail"><a href="#">상세</a></td>
+            </tr>
+            <tr>
+              <td class="mypage-history__cell--date">2025.12.01 13:25:42</td>
+              <td class="mypage-history__cell--product">T마일리지 충전권</td>
+              <td class="mypage-history__cell--amount">100,000</td>
+              <td class="mypage-history__cell--payment">100,000 (현대카드)</td>
+              <td class="mypage-history__cell--detail"><a href="#">상세</a></td>
+            </tr>
+            <tr>
+              <td class="mypage-history__cell--date">2025.12.08 19:47:10</td>
+              <td class="mypage-history__cell--product">SOOP 별풍선 상품권</td>
+              <td class="mypage-history__cell--amount">1,100,000</td>
+              <td class="mypage-history__cell--payment">1,100,000 (현대카드)</td>
+              <td class="mypage-history__cell--detail"><a href="#">상세</a></td>
+            </tr>
+            <tr>
+              <td class="mypage-history__cell--date">2025.12.10 22:15:28</td>
+              <td class="mypage-history__cell--product">도서문화상품권</td>
+              <td class="mypage-history__cell--amount">30,000</td>
+              <td class="mypage-history__cell--payment">30,900 (휴대폰)</td>
+              <td class="mypage-history__cell--detail"><a href="#">상세</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <nav class="pagination mypage-history__pagination" aria-label="구매내역 페이지">
+        <button type="button" class="pagination__btn pagenation__btn--prev" aria-label="이전 페이지" disabled></button>
+        <span class="pagination__num is-active" aria-current="page">1</span>
+        <a href="#" class="pagination__num">2</a>
+        <a href="#" class="pagination__num">3</a>
+        <a href="#" class="pagination__num">4</a>
+        <a href="#" class="pagination__num">5</a>
+        <button type="button" class="pagination__btn pagenation__btn--next" aria-label="다음 페이지"></button>
+      </nav>
+
+      <div class="mypage-history__info">
+        <section class="mypage-history__info-section">
+          <h3 class="mypage-history__info-title">구매 상품권 확인</h3>
+          <p>구매한 상품권은 회원 가입 시 인증한 휴대폰 번호로 발송됩니다.</p>
+          <p>PIN번호 재전송이 가능하나 분실 시 책임은 본인에게 있습니다.</p>
+        </section>
+        <section class="mypage-history__info-section">
+          <h3 class="mypage-history__info-title">구매 취소</h3>
+          <p>정상 발권 완료된 상품권은 사용 여부와 관계없이 취소가 불가합니다.</p>
+          <p>오류 또는 사용이 불가능한 상품권에 한해 고객센터로 연락 주시면 확인 후 환불 또는 취소가 가능합니다.</p>
+        </section>
+        <section class="mypage-history__info-section">
+          <h3 class="mypage-history__info-title">상품권 보안</h3>
+          <p>상품권은 본인 사용 목적으로만 구매해야 하며, 타인에게 전달된 PIN번호로 발생한 문제는 책임지지 않습니다.</p>
+          <p>대리구매 요청, 업체/수사기관/금융기관/자녀 등 낯선 요청의 경우 보이스피싱의 가능성이 있습니다. 이에 해당될 경우 구매를 중단하고 고객센터로 연락 바랍니다.</p>
+          <p>PIN번호가 노출될 경우 누구나 사용할 수 있으므로 구매 즉시 사용하시고, 타인에게 노출되지 않도록 주의해 주세요.</p>
+        </section>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- 푸터 -->
+  <footer class="footer">
+    <div class="footer__top page-width"> 
+      <a href="#" class="footer__link">이용약관</a>
+      <a href="#" class="footer__link">개인정보처리방침</a>
+    </div>
+    <div class="footer__bottom">
+      <div class="page-width footer__inner">
+        <img src="assets/logo_gray.png" alt="핀왕" class="footer__logo">
+        <div class="footer__info">
+          <p class="footer__text">(주)호라이즌테크놀러지 | 대표: 김경호 | 대표번호 1670-2983 평일 10:00 ~ 17:00 (점심시간 12:30 ~ 13:30) / 공휴일 휴무</p>
+          <p class="footer__text">주소: 서울특별시 강서구 양천로 583, B동 1101호 (염창동, 우림블루나인센터)</p>
+          <p class="footer__text">사업자등록번호: 220-86-93669 통신판매신고번호: 2018-서울강서-0830호</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/common.js"></script>
+</body>
+</html>

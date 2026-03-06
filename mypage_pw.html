@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>비밀번호 변경 - 핀왕</title>
+  <!-- tokens.css, common.css 공통스타일 고정 -->
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/common.css">
+  <!-- users.css 로그인 스타일 -->
+  <link rel="stylesheet" href="css/mypage.css">
+</head>
+<body>
+
+  <!-- 헤더 -->
+  <header class="header">
+    <div class="page-width header__inner">
+      <h1 class="header__logo">
+        <a href="/" aria-label="핀왕 홈">
+          <img src="assets/logo.png" alt="핀왕" class="header__logo-img">
+        </a>
+      </h1>
+      <nav class="header__nav" aria-label="주 메뉴">
+        <ul class="header__nav-list">
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link">이용 가이드</a>
+            <ul class="header__dropdown">
+              <li><a href="guide_buy.html">구매안내</a></li>
+              <li><a href="guide_confirm.html">상품권 확인</a></li>
+              <li><a href="#">취소안내</a></li>
+              <li><a href="guide_use.html">사용처</a></li>
+            </ul>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link">고객센터</a>
+            <ul class="header__dropdown">
+              <li><a href="#">공지사항</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__actions">
+        <a href="#" class="c-btn header__btn-join">회원가입</a>
+        <a href="#" class="header__link-login">로그인</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="mypage">
+    <div class="page-width mypage__inner">
+
+      <h2 class="page-header mypage__title">회원정보</h2>
+
+      <div class="mypage-modify__form">
+        <!-- 섹션 제목: 비밀번호 변경 + 구분선 -->
+        <h3 class="mypage-modify__section-title">비밀번호 변경</h3>
+
+        <!-- 현재 비밀번호 -->
+        <div class="form-group form-group--row">
+          <label class="form-group__label" for="pw-current">현재 비밀번호</label>
+          <div class="form-group__field">
+            <input type="password" class="c-input" id="pw-current" name="current_password" placeholder="현재 비밀번호" autocomplete="current-password">
+          </div>
+        </div>
+        <!-- 새 비밀번호 (에러 노출용 is-error) -->
+        <div class="form-group form-group--row is-error">
+          <label class="form-group__label" for="pw-new">새 비밀번호</label>
+          <div class="form-group__field">
+            <input type="password" class="c-input" id="pw-new" name="new_password" placeholder="8~16자 이내 영문, 숫자, 특수문자로 입력해 주세요." autocomplete="new-password" aria-describedby="pw-new-error">
+            <span class="form-group__error" id="pw-new-error">형식에 맞지 않습니다. 다시 입력해 주세요.</span>
+          </div>
+        </div>
+        <!-- 새 비밀번호 확인 (에러 노출용 is-error) -->
+        <div class="form-group form-group--row is-error">
+          <label class="form-group__label" for="pw-new-confirm">새 비밀번호 확인</label>
+          <div class="form-group__field">
+            <input type="password" class="c-input" id="pw-new-confirm" name="new_password_confirm" placeholder="확인을 위해 한 번 더 입력해 주세요." autocomplete="new-password" aria-describedby="pw-new-confirm-error">
+            <span class="form-group__error" id="pw-new-confirm-error">비밀번호가 일치하지 않습니다.</span>
+          </div>
+        </div>
+
+        <!-- 비밀번호 안내 문구 -->
+        <div class="mypage-modify__guide">
+          <p>- 8~16자 이내의 영문, 숫자, 특수문자 조합으로 입력해 주세요.</p>
+          <p>- 공백(띄어쓰기)는 입력할 수 없습니다.</p>
+          <p>- 아이디, 휴대폰 번호, 생년월일은 사용할 수 없습니다.</p>
+          <p>- 이전과 동일한 비밀번호는 변경 불가능합니다.</p>
+        </div>
+
+        <!-- 비밀번호 변경 버튼 -->
+        <div class="mypage-modify__actions">
+          <button type="button" class="c-btn" disabled>비밀번호 변경</button>
+        </div>
+      </div>
+
+
+    </div>
+  </main>
+
+  <!-- 푸터 -->
+  <footer class="footer">
+    <div class="footer__top page-width"> 
+      <a href="#" class="footer__link">이용약관</a>
+      <a href="#" class="footer__link">개인정보처리방침</a>
+    </div>
+    <div class="footer__bottom">
+      <div class="page-width footer__inner">
+        <img src="assets/logo_gray.png" alt="핀왕" class="footer__logo">
+        <div class="footer__info">
+          <p class="footer__text">(주)호라이즌테크놀러지 | 대표: 김경호 | 대표번호 1670-2983 평일 10:00 ~ 17:00 (점심시간 12:30 ~ 13:30) / 공휴일 휴무</p>
+          <p class="footer__text">주소: 서울특별시 강서구 양천로 583, B동 1101호 (염창동, 우림블루나인센터)</p>
+          <p class="footer__text">사업자등록번호: 220-86-93669 통신판매신고번호: 2018-서울강서-0830호</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/common.js"></script>
+</body>
+</html>

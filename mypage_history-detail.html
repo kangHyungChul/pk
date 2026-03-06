@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>구매내역 상세 - 핀왕</title>
+  <!-- tokens.css, common.css 공통스타일 고정 -->
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/common.css">
+  <!-- mypage.css 마이페이지 스타일 -->
+  <link rel="stylesheet" href="css/mypage.css">
+</head>
+<body>
+
+  <!-- 헤더 -->
+  <header class="header">
+    <div class="page-width header__inner">
+      <h1 class="header__logo">
+        <a href="/" aria-label="핀왕 홈">
+          <img src="assets/logo.png" alt="핀왕" class="header__logo-img">
+        </a>
+      </h1>
+      <nav class="header__nav" aria-label="주 메뉴">
+        <ul class="header__nav-list">
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link">이용 가이드</a>
+            <ul class="header__dropdown">
+              <li><a href="guide_buy.html">구매안내</a></li>
+              <li><a href="guide_confirm.html">상품권 확인</a></li>
+              <li><a href="#">취소안내</a></li>
+              <li><a href="guide_use.html">사용처</a></li>
+            </ul>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link">고객센터</a>
+            <ul class="header__dropdown">
+              <li><a href="#">공지사항</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__actions">
+        <a href="#" class="c-btn header__btn-join">마이페이지</a>
+        <a href="#" class="header__link-login">로그아웃</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="mypage">
+    <div class="page-width mypage__inner">
+
+      <!-- 페이지 제목 -->
+      <h2 class="page-header mypage__title">구매내역</h2>
+
+      <!-- 주문 정보 테이블: 주문일시, 상품권, 총 결제금액, 결제방법, 주문 상태 -->
+      <div class="history-detail__order-info">
+        <div class="history-detail__row">
+          <div class="history-detail__label">주문일시</div>
+          <div class="history-detail__value">2025.11.30 15:13:01</div>
+        </div>
+        <div class="history-detail__row">
+          <div class="history-detail__label">상품권</div>
+          <div class="history-detail__value">컬쳐랜드 상품권</div>
+        </div>
+        <div class="history-detail__row">
+          <div class="history-detail__label">총 결제금액</div>
+          <div class="history-detail__value">30,900</div>
+        </div>
+        <div class="history-detail__row">
+          <div class="history-detail__label">결제방법</div>
+          <div class="history-detail__value">휴대폰</div>
+        </div>
+        <div class="history-detail__row">
+          <div class="history-detail__label">주문 상태</div>
+          <div class="history-detail__value">결제 완료</div>
+        </div>
+      </div>
+
+      <!-- 재발송 안내 및 버튼 -->
+      <div class="history-detail__resend">
+        <p class="history-detail__resend-text">재발송은 최대 2회까지 가능합니다.</p>
+        <button type="button" class="c-btn c-btn--outline history-detail__resend-btn">재발송</button>
+      </div>
+
+      <!-- 상품권 상세 테이블: 구분, 상품권, 상품금액, 상품권 번호, 유효기간 -->
+      <div class="history-detail__voucher-wrap">
+        <table class="history-detail__voucher-table">
+          <colgroup>
+            <col class="history-detail__col--no">
+            <col class="history-detail__col--product">
+            <col class="history-detail__col--amount">
+            <col class="history-detail__col--pin">
+            <col class="history-detail__col--expire">
+          </colgroup>
+          <thead>
+            <tr>
+              <th scope="col">구분</th>
+              <th scope="col">상품권</th>
+              <th scope="col">상품금액</th>
+              <th scope="col">상품권 번호</th>
+              <th scope="col">유효기간</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>컬쳐랜드 상품권</td>
+              <td>10,000</td>
+              <td>3100-****-****-7224</td>
+              <td>2026.02.28 23:59:59</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>컬쳐랜드 상품권</td>
+              <td>10,000</td>
+              <td>3100-****-****-7224</td>
+              <td>2026.02.28 23:59:59</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>컬쳐랜드 상품권</td>
+              <td>10,000</td>
+              <td>3100-****-****-7224</td>
+              <td>2026.02.28 23:59:59</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- 목록보기 버튼 -->
+      <div class="history-detail__actions">
+        <a href="mypage_history.html" class="c-btn history-detail__btn-list">목록보기</a>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- 푸터 -->
+  <footer class="footer">
+    <div class="footer__top page-width"> 
+      <a href="#" class="footer__link">이용약관</a>
+      <a href="#" class="footer__link">개인정보처리방침</a>
+    </div>
+    <div class="footer__bottom">
+      <div class="page-width footer__inner">
+        <img src="assets/logo_gray.png" alt="핀왕" class="footer__logo">
+        <div class="footer__info">
+          <p class="footer__text">(주)호라이즌테크놀러지 | 대표: 김경호 | 대표번호 1670-2983 평일 10:00 ~ 17:00 (점심시간 12:30 ~ 13:30) / 공휴일 휴무</p>
+          <p class="footer__text">주소: 서울특별시 강서구 양천로 583, B동 1101호 (염창동, 우림블루나인센터)</p>
+          <p class="footer__text">사업자등록번호: 220-86-93669 통신판매신고번호: 2018-서울강서-0830호</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/common.js"></script>
+</body>
+</html>

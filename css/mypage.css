@@ -1,0 +1,399 @@
+/* 마이페이지 / 회원정보 수정 */
+
+.mypage {
+  padding: var(--page-gutter);
+}
+
+.mypage__title {
+  margin-bottom: 40px;
+}
+
+.mypage__inner {
+  padding: 50px var(--inner-x) 80px;
+  background-color: var(--color-bg-white);
+  border-radius: 6px;
+}
+
+/* 회원정보 수정 폼: 행 간격 */
+.mypage-modify__form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 700px;
+  margin: 60px auto 0;
+  padding-top: 40px;
+  border-top: 1px solid var(--color-bg-line);
+}
+
+.mypage-modify__form:has(.mypage-modify__section-title) {
+  padding-top: 0;
+  border-top: none;
+}
+
+.mypage-modify__form .form-group__field {
+  flex: 0 1 500px;
+}
+
+/* 비밀번호 변경 등: 섹션 제목 + 구분선 */
+.mypage-modify__section-title {
+  font-weight: 700;
+  font-size: 24px;
+  color: var(--color-text-main);
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--color-bg-line);
+}
+
+/* 비밀번호 안내 문구 (bullet 4줄) */
+.mypage-modify__guide {
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--color-text-main);
+}
+
+/* 회원탈퇴: 탈퇴 시 삭제 안내 (첫 줄 22px medium, 이하 20px) */
+.mypage-modify__withdrawal-info {
+  margin-bottom: 40px;
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--color-text-main);
+}
+
+.mypage-modify__withdrawal-info strong {
+  display: block;
+  margin-bottom: 16px;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 32px;
+}
+
+.mypage-modify__withdrawal-info em {
+  display: block;
+  margin-top: 16px;
+  font-style: normal;
+}
+
+/* 탈퇴 확인 박스: 전체를 label로 구성, 회색 배경 + 체크 아이콘 (tokens 재사용) */
+.mypage-modify__confirm-box {
+  background-color: var(--color-gray-100);
+  border: 1px solid var(--color-bg-line);
+  border-radius: 6px;
+  height: 64px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.mypage-modify__confirm-text {
+  flex: 1;
+  font-weight: 500;
+  font-size: 20px;
+  text-align: center;
+  color: var(--color-text-main);
+}
+
+/* 확인 박스 체크 시 아이콘 (공통 c-radio-icon 사용) */
+.mypage-modify__confirm-box:has(.c-radio-input:checked) .c-radio-icon {
+  background: var(--icon-checkbox-checked);
+}
+
+/* 마케팅 정보: 문자/알림톡 수신 */
+.mypage-modify__radio-wrap {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 63px;
+  flex-wrap: wrap;
+}
+
+.mypage-modify__radio-caption {
+  font-weight: 500;
+  font-size: 20px;
+  color: var(--color-gray-500);
+}
+
+.mypage-modify__actions {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 30px;
+  gap: 30px;
+}
+
+.mypage-modify__actions .c-btn {
+  flex: 1;
+}
+
+
+/* ========== 휴대폰 번호 변경 모달 (본인인증/변경 폼) ========== */
+
+.modal-phone__head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+}
+
+.modal-phone__logo {
+  display: block;
+  width: 96px;
+  height: 32px;
+  object-fit: contain;
+}
+
+.modal-phone__intro {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 32px;
+  text-align: center;
+  color: var(--color-text-main);
+}
+
+.modal-phone__form {
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin: 30px auto 0;
+}
+
+.modal-phone__form .form-group__field {
+  flex: 0 1 500px;
+}
+
+
+/* ========== 구매내역 ========== */
+
+.mypage-history__subtitle {
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--color-text-main);
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--color-gray-500);
+}
+
+.mypage-history__table-wrap {
+  margin-bottom: 40px;
+  overflow-x: auto;
+}
+
+.mypage-history__table {
+  width: 100%;
+  min-width: 900px;
+  border-collapse: collapse;
+}
+
+.mypage-history__table th,
+.mypage-history__table td {
+  padding: 20px 30px;
+  vertical-align: middle;
+}
+
+.mypage-history__table th {
+  background-color: var(--color-gray-100);
+  font-weight: 500;
+  font-size: 20px;
+  color: var(--color-text-main);
+  border-bottom: 1px solid var(--color-bg-line);
+  text-align: left;
+}
+
+.mypage-history__table td {
+  background-color: var(--color-bg-white);
+  font-size: 18px;
+  line-height: 26px;
+  color: var(--color-text-main);
+  border-bottom: 1px solid var(--color-bg-line);
+}
+
+.mypage-history__table tbody tr:hover td {
+  background-color: var(--color-gray-100);
+}
+
+.mypage-history__table .mypage-history__cell--date { width: 23%; }
+.mypage-history__table .mypage-history__cell--product { width: auto; }
+.mypage-history__table .mypage-history__cell--amount { width: 19%; }
+.mypage-history__table .mypage-history__cell--payment { width: 23%; }
+.mypage-history__table .mypage-history__cell--detail { width: 100px; }
+
+.mypage-history__table .mypage-history__cell--detail a {
+  color: var(--color-theme-primary);
+  text-decoration: none;
+}
+
+.mypage-history__table .mypage-history__cell--detail a:hover {
+  text-decoration: underline;
+}
+
+.mypage-history__pagination {
+  margin-bottom: 40px;
+}
+
+.mypage-history__pagination .pagination__num[href] {
+  text-decoration: none;
+}
+
+.mypage-history__info {
+  padding: 40px;
+  background-color: var(--color-bg-white);
+  border: 1px solid var(--color-gray-300);
+  border-radius: 6px;
+}
+
+.mypage-history__info-section {
+  margin-bottom: 40px;
+}
+
+.mypage-history__info-section:last-child {
+  margin-bottom: 0;
+}
+
+.mypage-history__info-title {
+  font-weight: 500;
+  font-size: 20px;
+  color: var(--color-text-main);
+  margin: 0 0 12px;
+}
+
+.mypage-history__info-section p {
+  font-size: 18px;
+  line-height: 26px;
+  color: var(--color-gray-500);
+  margin: 0 0 8px;
+}
+
+.mypage-history__info-section p:last-child {
+  margin-bottom: 0;
+}
+
+
+/* ========== 구매내역 상세 ========== */
+.history-detail__order-info {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 80px;
+  border-top: 1px solid var(--color-gray-500);
+}
+
+.history-detail__row {
+  display: flex;
+  border-bottom: 1px solid var(--color-bg-line);
+}
+
+.history-detail__label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 290px;
+  flex-shrink: 0;
+  padding: 20px 10px;
+  background-color: var(--color-gray-100);
+  font-weight: 500;
+  font-size: 20px;
+  color: var(--color-text-main);
+  text-align: center;
+}
+
+.history-detail__value {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  padding: 20px 40px;
+  background-color: var(--color-bg-white);
+  font-size: 18px;
+  line-height: 26px;
+  color: var(--color-text-main);
+}
+
+.history-detail__resend {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 80px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--color-gray-500);
+}
+
+.history-detail__resend-text {
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--color-text-main);
+  margin: 0;
+}
+
+.history-detail__resend-btn {
+  width: 110px;
+  height: 56px;
+  font-size: 20px;
+}
+
+.c-btn--outline {
+  background-color: var(--color-bg-white);
+  color: var(--color-gray-500);
+  border: 1px solid var(--color-gray-300);
+}
+
+.c-btn--outline:hover:not(:disabled) {
+  background-color: var(--color-gray-100);
+  filter: none;
+}
+
+.history-detail__voucher-wrap {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  overflow-x: auto;
+}
+
+.history-detail__voucher-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 900px;
+}
+
+.history-detail__col--no { width: 9%; }
+.history-detail__col--product { width: 20%; }
+.history-detail__col--amount { width: 20%; }
+.history-detail__col--pin { width: auto; }
+.history-detail__col--expire { width: 25%; }
+
+.history-detail__voucher-table th {
+  padding: 20px;
+  background-color: var(--color-gray-100);
+  font-weight: 500;
+  font-size: 20px;
+  color: var(--color-text-main);
+  text-align: left;
+  border-bottom: 1px solid var(--color-bg-line);
+}
+
+.history-detail__voucher-table th:first-child {
+  text-align: center;
+}
+
+.history-detail__voucher-table td {
+  padding: 20px;
+  background-color: var(--color-bg-white);
+  font-size: 18px;
+  line-height: 26px;
+  color: var(--color-text-main);
+  border-bottom: 1px solid var(--color-bg-line);
+}
+
+.history-detail__voucher-table td:first-child {
+  text-align: center;
+}
+
+.history-detail__actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.history-detail__btn-list {
+  width: 502px;
+  max-width: 100%;
+}
