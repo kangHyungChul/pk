@@ -155,6 +155,3 @@
 .idfind-result__item:has(.idfind-result__input:checked) .idfind-result__radio-icon {
   background: var(--icon-checkbox-checked);
 }
-
-
-/*  no-result */

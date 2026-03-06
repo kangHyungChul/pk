@@ -1,5 +1,4 @@
-/* 정책 페이지: 개인정보처리방침, 서비스이용약관 */
-
+/* 정책 페이지 */
 .policy {
   padding: var(--page-gutter);
 }
@@ -13,7 +12,6 @@
 /* 페이지 제목 */
 .policy__title {
   margin-bottom: 50px;
-  font-family: var(--font-family-base);
   font-weight: 700;
   font-size: 32px;
   line-height: 1;
@@ -22,7 +20,6 @@
 
 /* 시행일 */
 .policy__date {
-  font-family: var(--font-family-base);
   font-weight: 500;
   font-size: 24px;
   line-height: 34px;
@@ -44,7 +41,7 @@
   font-size: 22px;
   line-height: 32px;
   color: var(--color-gray-500);
-  margin: 0 0 26px;
+  margin-bottom: 26px;
 }
 
 /* 조/항 제목 */
@@ -61,7 +58,7 @@
   font-size: 20px;
   line-height: 26px;
   color: var(--color-text-main);
-  margin: 0 0 8px;
+  margin-bottom: 8px;
 }
 
 /* 조/항 본문 */
@@ -73,7 +70,7 @@
 }
 
 .policy__section-body p {
-  margin: 0 0 4px;
+  margin-bottom: 4px;
 }
 
 .policy__section-body p:last-child {

@@ -128,8 +128,7 @@
 }
 
 
-/* ========== 휴대폰 번호 변경 모달 (본인인증/변경 폼) ========== */
-
+/* 휴대폰 번호 변경 모달 */
 .modal-phone__head {
   display: flex;
   flex-direction: column;
@@ -166,8 +165,7 @@
 }
 
 
-/* ========== 구매내역 ========== */
-
+/* 구매내역 */
 .mypage-history__subtitle {
   font-size: 20px;
   line-height: 30px;
@@ -222,7 +220,6 @@
 
 .mypage-history__table .mypage-history__cell--detail a {
   color: var(--color-theme-primary);
-  text-decoration: none;
 }
 
 .mypage-history__table .mypage-history__cell--detail a:hover {
@@ -231,10 +228,6 @@
 
 .mypage-history__pagination {
   margin-bottom: 40px;
-}
-
-.mypage-history__pagination .pagination__num[href] {
-  text-decoration: none;
 }
 
 .mypage-history__info {
@@ -256,14 +249,14 @@
   font-weight: 500;
   font-size: 20px;
   color: var(--color-text-main);
-  margin: 0 0 12px;
+  margin-bottom: 12px;
 }
 
 .mypage-history__info-section p {
   font-size: 18px;
   line-height: 26px;
   color: var(--color-gray-500);
-  margin: 0 0 8px;
+  margin-bottom: 8px;
 }
 
 .mypage-history__info-section p:last-child {
@@ -271,7 +264,7 @@
 }
 
 
-/* ========== 구매내역 상세 ========== */
+/* 구매내역 상세 */
 .history-detail__order-info {
   display: flex;
   flex-direction: column;

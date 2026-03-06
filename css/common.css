@@ -323,12 +323,12 @@ ol {
   transition: background-color 0.2s, color 0.2s, border-color 0.2s;
 }
 
-.pagenation__btn--prev {
-  background: center center / 20px auto no-repeat url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M12 3L6 10L12 17" stroke="%23777777" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>')
+.pagination__btn--prev {
+  background: center center / 20px auto no-repeat url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M12 3L6 10L12 17" stroke="%23777777" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>');
 }
 
-.pagenation__btn--next {
-  background: center center / 20px auto no-repeat url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M8 3L14 10L8 17" stroke="%23777777" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>')
+.pagination__btn--next {
+  background: center center / 20px auto no-repeat url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M8 3L14 10L8 17" stroke="%23777777" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>');
 }
 
 .pagination__btn:hover:not(:disabled),

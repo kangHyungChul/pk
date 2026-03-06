@@ -1,6 +1,4 @@
-/* 회원가입 (tokens.css, common.css 사용) */
-
-/* 레이아웃 */
+/* 회원가입 */
 .signup {
   padding: var(--page-gutter);
 }
@@ -12,9 +10,7 @@
   border-radius: 6px;
 }
 
-/* ========== 약관동의 ========== */
-
-/* 단계 표시: 회원가입 */
+/* 약관동의 */
 .signup-agree__steps {
   display: flex;
   align-items: center;
@@ -67,7 +63,6 @@
 }
 
 .signup-agree__title {
-  font-family: var(--font-family-base);
   font-weight: 700;
   font-size: 24px;
   color: var(--color-text-main);
@@ -119,7 +114,7 @@
 }
 
 .signup-agree__content p {
-  margin: 0 0 10px;
+  margin-bottom: 10px;
 }
 
 .signup-agree__content p:last-child {
@@ -174,7 +169,7 @@
   flex: 1;
 }
 
-/* ========== 본인인증 / 정보입력 공통 (signup-section) ========== */
+/* 본인인증 / 정보입력 */
 .signup-section {
   max-width: 860px;
   margin: 0 auto;
@@ -219,7 +214,7 @@
   flex: 1;
 }
 
-/* ========== 가입완료 =========== */
+/* 가입완료 */
 .signup-complete {
   max-width: 860px;
   margin: 0 auto;

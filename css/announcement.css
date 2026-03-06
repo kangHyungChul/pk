@@ -27,7 +27,7 @@ body {
     text-align: center;
 }
 
-/* 타이틀: Gmarket Sans Bold */
+/* 타이틀 */
 .announcement__title {
     font-family: var(--font-family-gmarket);
     font-weight: 700;

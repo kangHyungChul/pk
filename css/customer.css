@@ -1,6 +1,4 @@
-/* 고객센터: 공지사항 목록 등 */
-
-/* 레이아웃 */
+/* 고객센터 */
 .customer {
   padding: var(--page-gutter);
 }
@@ -12,7 +10,7 @@
   border-radius: 6px;
 }
 
-/* 공지 공통: 페이지 제목 영역 */
+/* 페이지 제목 */
 .notice_head {
   margin-bottom: 64px;
 }
@@ -25,17 +23,19 @@
   color: var(--color-text-main);
 }
 
-/* 공지 목록 (ul/li) */
+/* 공지 목록 */
 .notice-list {
   border-top: 1px solid var(--color-theme-primary);
 }
 
 .notice-list__row {
-  display: flex; 
+  display: flex;
   align-items: center;
   gap: 14%;
   padding: 20px 40px;
   border-bottom: 1px solid var(--color-bg-line);
+  background-color: var(--color-bg-white);
+  transition: background-color 0.2s;
 }
 
 .notice-list__head {
@@ -43,11 +43,6 @@
   font-weight: 500;
   font-size: 16px;
   color: var(--color-gray-500);
-}
-
-.notice-list__row {
-  background-color: var(--color-bg-white);
-  transition: background-color 0.2s;
 }
 
 .notice-list__row:hover {
@@ -87,7 +82,7 @@
   flex: 1;
 }
 
-/* 공지 공통: 날짜 */
+/* 날짜 */
 .notice_date {
   flex-shrink: 0;
   width: 100px;
@@ -100,7 +95,7 @@
   text-align: right;
 }
 
-/* 공지 공통: 뱃지(점검/안내/공지 등) */
+/* 뱃지 */
 .notice_badge {
   display: flex;
   align-items: center;
@@ -180,7 +175,7 @@
   min-width: 500px;
 }
 
-/* FAQ 탭 (Figma 4744-3968) */
+/* FAQ 탭 */
 .faq-tabs {
   display: flex;
   flex-wrap: wrap;
@@ -197,7 +192,6 @@
   width: 150px;
   height: 40px;
   padding: 10px 20px;
-  font-family: var(--font-family-base);
   font-weight: 500;
   font-size: 18px;
   line-height: 1;
@@ -206,7 +200,6 @@
   border: none;
   border-radius: 6px;
   cursor: pointer;
-  text-decoration: none;
   transition: background-color 0.2s, color 0.2s;
 }
 
@@ -225,7 +218,6 @@
   color: var(--color-text-white);
 }
 
-/* FAQ 리스트 상단 여백 (탭과 리스트 사이) */
 .faq-tabs + .faq {
   margin-top: 20px;
   border-top: 1px solid var(--color-bg-line);

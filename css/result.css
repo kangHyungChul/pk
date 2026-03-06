@@ -115,40 +115,7 @@
 .result__card-actions .c-btn {
   flex: 1;
 }
-/* 
+
+/* 모바일 */
 @media (max-width: 560px) {
-  .result__title {
-    font-size: 24px;
-    margin-bottom: 24px;
-  }
-
-  .result__card {
-    padding: 24px 20px;
-  }
-
-  .result__list::before {
-    display: none;
-  }
-
-  .result__row {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 8px;
-  }
-
-  .result__label {
-    flex: none;
-  }
-
-  .result__value {
-    text-align: left;
-  }
-
-  .result__actions {
-    flex-direction: column;
-  }
-
-  .result__btn {
-    width: 100%;
-  }
-} */
+}

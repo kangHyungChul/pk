@@ -1,6 +1,4 @@
-/* 이용가이드: 구매안내, 상품권 확인, 사용처 */
-
-/* 레이아웃 */
+/* 이용가이드 */
 .guide {
   padding: var(--page-gutter);
 }
@@ -37,9 +35,6 @@
 
 /* 단계 블록 */
 .guide-steps {
-  list-style: none;
-  margin: 0;
-  padding: 0;
   display: flex;
   flex-direction: column;
   gap: 30px;

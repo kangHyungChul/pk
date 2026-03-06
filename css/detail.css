@@ -45,9 +45,6 @@
   max-width: 230px;
 }
 
-.detail__section {
-}
-
 .detail__section-title {
   margin-bottom: 12px;
   font-weight: 500;
@@ -70,7 +67,7 @@
 }
 
 .detail__section-body p {
-  margin: 0 0 4px;
+  margin-bottom: 4px;
 }
 
 .detail__section-body p:last-child {
@@ -82,11 +79,6 @@
   font-size: 18px;
   line-height: 26px;
   color: var(--color-gray-500);
-}
-
-/* 우측 영역 */
-.detail__right {
-
 }
 
 .detail-tabs {
@@ -454,3 +446,4 @@
     font-size: 18px;
   }
 } */
+
