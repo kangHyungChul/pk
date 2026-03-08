@@ -34,7 +34,6 @@
   flex: 0 1 500px;
 }
 
-/* 섹션 제목 */
 .mypage-modify__section-title {
   font-weight: 700;
   font-size: 24px;
@@ -44,7 +43,6 @@
   border-bottom: 1px solid var(--color-bg-line);
 }
 
-/* 비밀번호 안내 */
 .mypage-modify__guide {
   font-size: 20px;
   line-height: 30px;
@@ -73,7 +71,6 @@
   font-style: normal;
 }
 
-/* 탈퇴 확인 */
 .mypage-modify__confirm-box {
   background-color: var(--color-gray-100);
   border: 1px solid var(--color-bg-line);
@@ -400,7 +397,8 @@
   }
 
   .mypage__inner {
-    padding: 44px var(--inner-x) 70px;
+    padding: 20px var(--inner-x) 30px;
+    border-radius: 4px;
   }
 
   .mypage-modify__form {
@@ -435,6 +433,7 @@
   .mypage-modify__confirm-box {
     padding: 0 18px;
     gap: 8px;
+    border-radius: 4px;
   }
 
   .mypage-modify__confirm-text {
@@ -511,6 +510,7 @@
 
   .mypage-history__info {
     padding: 16px;
+    border-radius: 4px;
   }
 
   .mypage-history__info-section {

@@ -10,7 +10,6 @@
   background-color: var(--color-bg-white);
 }
 
-/* 완료 문구 */
 .result__title {
   margin-bottom: 60px;
   font-weight: 700;
@@ -20,7 +19,6 @@
   text-align: center;
 }
 
-/* 결제 정보 */
 .result__card {
   max-width: 860px;
   margin: 0 auto 40px;
@@ -102,7 +100,6 @@
   line-height: 34px;
 }
 
-/* 하단 버튼 */
 .result__card-actions {
   display: flex;
   align-items: center;
@@ -135,6 +132,7 @@
 
   .result__card-inner {
     padding: 24px 20px;
+    border-radius: 8px;
   }
 
   .result__list {

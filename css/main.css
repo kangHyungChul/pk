@@ -63,7 +63,6 @@
   align-items: flex-start;
 }
 
-/* 상품권 그리드 */
 .product-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -133,7 +132,6 @@
   width: fit-content;
 }
 
-/* 공지사항 */
 .section--notice-guide {
   padding-bottom: 120px; 
 }
@@ -282,6 +280,10 @@
     gap: 26px;
   }
 
+  .banner-swiper {
+    height: 220px;
+  }
+
   .product-grid {
     grid-template-columns: 1fr;
     gap: 8px;
@@ -289,11 +291,16 @@
 
   .product-card__link {
     gap: 12px;
-    padding: 26px;
+    padding: 16px;
   }
 
   .product-card__body {
     gap: 6px;
+  }
+
+  .product-card__thumb {
+    width: 100px;
+    height: 100px;
   }
 
   .product-card__title {
@@ -325,6 +332,7 @@
 
   .notice-list__tag {
     font-size: 14px;
+    border-radius: 4px;
   }
 
   .notice-list__text {

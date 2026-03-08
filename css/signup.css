@@ -45,7 +45,6 @@
   font-weight: 700;
 }
 
-/* 약관 블록 하나 (제목 + 구분선 + 내용 박스) */
 .signup-agree__block {
   margin-bottom: 40px;
 }
@@ -121,7 +120,6 @@
   margin-bottom: 0;
 }
 
-/* 전체 동의 바: 텍스트+체크박스 한 label */
 .signup-agree__all {
   display: flex;
   align-items: center;
@@ -288,7 +286,8 @@
 
 @media (max-width: 756px) {
   .signup__inner {
-    padding: 44px var(--inner-x) 70px;
+    padding: 20px var(--inner-x) 30px;
+    border-radius: 4px;
   }
 
   .signup-agree__steps {
@@ -320,6 +319,7 @@
     padding: 26px;
     font-size: 18px;
     line-height: 26px;
+    border-radius: 4px;
   }
 
   .signup-agree__content p {
@@ -329,6 +329,7 @@
   .signup-agree__all {
     margin-top: 18px;
     padding: 0 18px;
+    border-radius: 4px;
   }
 
   .signup-agree__all-text {
