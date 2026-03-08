@@ -815,6 +815,11 @@ ol {
   }
 
   .modal__dialog {
+    padding: 24px;
     border-radius: 8px;
+  }
+
+  .modal--lg .modal__dialog {
+    width: auto;
   }
 }

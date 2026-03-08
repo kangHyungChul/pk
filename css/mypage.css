@@ -480,6 +480,10 @@
     margin: 26px auto 0;
   }
 
+  .modal-phone__form .form-group__field {
+    flex: unset;
+  }
+
   .mypage-history__subtitle {
     font-size: 18px;
     line-height: 26px;
