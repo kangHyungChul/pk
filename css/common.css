@@ -165,7 +165,7 @@ ol {
   margin-left: auto;
 }
 
-/* 1depth: ul li 가로 배치 */
+/* 1depth 메뉴 */
 .header__nav-list {
   display: flex;
   align-items: center;
@@ -187,7 +187,7 @@ ol {
   color: var(--color-text-main);
 }
 
-/* 2depth: 드롭다운 */
+/* 2depth 드롭다운 */
 .header__dropdown {
   position: absolute;
   top: 100%;
@@ -299,7 +299,7 @@ ol {
   font-size: 32px;
 }
 
-/* 페이지네이션 (공통) */
+/* 페이지네이션 */
 .pagination {
   display: flex;
   align-items: center;
@@ -348,58 +348,14 @@ ol {
   border-color: var(--color-theme-primary);
 }
 
-/* 
-
-@media (max-width: 1200px) {
-  .product-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .section__row {
-    flex-direction: column;
-  }
-
-  .notice-column {
-    flex: none;
-    max-width: 100%;
-  }
-}
-
-@media (max-width: 560px) {
-  .header__nav {
-    display: none;
-  }
-
-  .banner-slide__content {
-    font-size: 32px;
-    white-space: normal;
-  }
-
-  .banner-slide__visual {
-    display: none;
-  }
-
-  .product-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .guide-grid {
-    grid-template-columns: 1fr;
-  }
-} */
-
-
-
-/* 미디어 쿼리 */
-/* 태블릿 */
-/* ========== 폼 공통: label + input 그룹, 에러 메시지  ========== */
+/* 폼 그룹 */
 .form-group {
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
 
-/* 가로 배치: 라벨 좌측, 입력 영역 우측 (본인인증·정보입력 등) */
+/* 폼 가로 배치 */
 .form-group--row {
   flex-direction: row;
   align-items: flex-start;
@@ -426,7 +382,7 @@ ol {
   gap: 10px;
 }
 
-/* form-group__field 내 input + 버튼 조합: 비율에 따라 input은 가변, 버튼은 고정 너비 */
+/* input + 버튼 한 줄 */
 .form-group__field--with-btn {
   flex-direction: row;
   align-items: stretch;
@@ -442,7 +398,7 @@ ol {
   height: 56px;
 }
 
-/* input 공통 스타일: 높이 56px, 패딩 16px 20px, border·radius·배경 */
+/* input 공통 */
 .c-input {
   display: block;
   width: 100%;
@@ -488,7 +444,7 @@ ol {
   border-color: var(--color-system-error);
 } */
 
-/* input 하단 에러 메시지 (공통) */
+/* 에러 메시지 */
 .form-group__error {
   font-weight: 500;
   font-size: 16px;
@@ -501,7 +457,7 @@ ol {
   display: block;
 }
 
-/* input 하단 안내/예시 문구 (에러 아님, 회색) */
+/* 안내 문구 */
 .form-group__hint {
   display: block;
   margin-top: 6px;
@@ -511,7 +467,7 @@ ol {
   color: var(--color-gray-400);
 }
 
-/* 라디오/체크박스 그룹 (label + tokens 아이콘 재사용) */
+/* 라디오/체크박스 그룹 */
 .c-radio-group {
   display: flex;
   align-items: center;
@@ -558,7 +514,7 @@ ol {
   background: var(--icon-checkbox-checked);
 }
 
-/* 모달 팝업 : fixed 중앙, dimmed 배경 투명 */
+/* 모달 */
 .modal {
   position: fixed;
   inset: 0;
@@ -623,9 +579,110 @@ ol {
 }
 
 @media (max-width: 1200px) {
+  .page-width {
+    padding-inline: 16px;
+  }
 }
 
-/* 모바일 */
-@media (max-width: 560px) {
-}
+@media (max-width: 756px) {
+  .page-width {
+    padding-inline: 12px;
+  }
 
+  .c-btn {
+    height: 52px;
+    font-size: 18px;
+  }
+
+  .header__nav {
+    display: none;
+  }
+
+  .header__nav-link {
+    font-size: 14px;
+  }
+
+  .header__dropdown a {
+    font-size: 12px;
+  }
+
+  .header__btn-join {
+    font-size: 14px;
+  }
+
+  .header__link-login {
+    font-size: 14px;
+  }
+
+  .footer__top {
+    font-size: 14px;
+  }
+
+  .footer__text {
+    font-size: 16px;
+    line-height: 1.26;
+  }
+
+  .page-header {
+    font-size: 28px;
+  }
+
+  .pagination__btn,
+  .pagination__num {
+    font-size: 16px;
+  }
+
+  .form-group__label {
+    min-height: unset;
+    font-size: 18px;
+  }
+
+  .form-group__field {
+    flex: unset;
+  }
+
+  .form-group--row {
+    flex-direction: column;
+    align-items: unset;
+    gap: 12px;
+  }
+
+  .form-group__field {
+    flex: 1 1 auto;
+    max-width: 100%;
+  }
+
+  .form-group__field--with-btn {
+    gap: 8px;
+  }
+
+  .form-group__error {
+    font-size: 14px;
+  }
+
+  .form-group__hint {
+    font-size: 14px;
+  }
+
+  .c-radio-text {
+    font-size: 16px;
+  }
+
+  .c-input {
+    height: 52px;
+  }
+
+  .c-blank-text {
+    height: 52px;
+    font-size: 16px;
+  }
+
+  .modal__title {
+    font-size: 24px;
+  }
+
+  .modal__message {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}

@@ -1,4 +1,4 @@
-/* 마이페이지 / 회원정보 수정 */
+/* 마이페이지 */
 
 .mypage {
   padding: var(--page-gutter);
@@ -14,7 +14,7 @@
   border-radius: 6px;
 }
 
-/* 회원정보 수정 폼: 행 간격 */
+/* 회원정보 수정 폼 */
 .mypage-modify__form {
   display: flex;
   flex-direction: column;
@@ -34,7 +34,7 @@
   flex: 0 1 500px;
 }
 
-/* 비밀번호 변경 등: 섹션 제목 + 구분선 */
+/* 섹션 제목 */
 .mypage-modify__section-title {
   font-weight: 700;
   font-size: 24px;
@@ -44,14 +44,14 @@
   border-bottom: 1px solid var(--color-bg-line);
 }
 
-/* 비밀번호 안내 문구 (bullet 4줄) */
+/* 비밀번호 안내 */
 .mypage-modify__guide {
   font-size: 20px;
   line-height: 30px;
   color: var(--color-text-main);
 }
 
-/* 회원탈퇴: 탈퇴 시 삭제 안내 (첫 줄 22px medium, 이하 20px) */
+/* 회원탈퇴 안내 */
 .mypage-modify__withdrawal-info {
   margin-bottom: 40px;
   font-size: 20px;
@@ -73,7 +73,7 @@
   font-style: normal;
 }
 
-/* 탈퇴 확인 박스: 전체를 label로 구성, 회색 배경 + 체크 아이콘 (tokens 재사용) */
+/* 탈퇴 확인 */
 .mypage-modify__confirm-box {
   background-color: var(--color-gray-100);
   border: 1px solid var(--color-bg-line);
@@ -95,12 +95,12 @@
   color: var(--color-text-main);
 }
 
-/* 확인 박스 체크 시 아이콘 (공통 c-radio-icon 사용) */
+/* 확인 체크 아이콘 */
 .mypage-modify__confirm-box:has(.c-radio-input:checked) .c-radio-icon {
   background: var(--icon-checkbox-checked);
 }
 
-/* 마케팅 정보: 문자/알림톡 수신 */
+/* 마케팅 수신 */
 .mypage-modify__radio-wrap {
   display: flex;
   flex-direction: row;
@@ -389,4 +389,203 @@
 .history-detail__btn-list {
   width: 502px;
   max-width: 100%;
+}
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 756px) {
+  .mypage__title {
+    margin-bottom: 34px;
+  }
+
+  .mypage__inner {
+    padding: 44px var(--inner-x) 70px;
+  }
+
+  .mypage-modify__form {
+    gap: 26px;
+    margin: 52px auto 0;
+    padding-top: 34px;
+  }
+
+  .mypage-modify__section-title {
+    font-size: 20px;
+    margin-bottom: 8px;
+    padding-bottom: 8px;
+  }
+
+  .mypage-modify__guide {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .mypage-modify__withdrawal-info {
+    margin-bottom: 34px;
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .mypage-modify__withdrawal-info strong {
+    margin-bottom: 14px;
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .mypage-modify__confirm-box {
+    padding: 0 18px;
+    gap: 8px;
+  }
+
+  .mypage-modify__confirm-text {
+    text-align: left;
+    font-size: 18px;
+  }
+
+  .mypage-modify__radio-wrap {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .mypage-modify__radio-caption {
+    font-size: 18px;
+  }
+
+  .mypage-modify__actions {
+    flex-direction: column;
+    margin-top: 26px;
+    gap: 16px;
+  }
+
+  .mypage-modify__actions .c-btn {
+    flex: unset;
+    width: 100%;
+  }
+
+  .mypage-modify__form .form-group__field {
+    flex: unset;
+  }
+
+  .modal-phone__head {
+    gap: 26px;
+  }
+
+  .modal-phone__intro {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .modal-phone__form {
+    gap: 26px;
+    margin: 26px auto 0;
+  }
+
+  .mypage-history__subtitle {
+    font-size: 18px;
+    line-height: 26px;
+    padding-bottom: 18px;
+  }
+
+  .mypage-history__table-wrap {
+    margin-bottom: 34px;
+  }
+
+  .mypage-history__table th,
+  .mypage-history__table td {
+    padding: 18px 26px;
+  }
+
+  .mypage-history__table th {
+    font-size: 18px;
+  }
+
+  .mypage-history__table td {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .mypage-history__pagination {
+    margin-bottom: 34px;
+  }
+
+  .mypage-history__info {
+    padding: 16px;
+  }
+
+  .mypage-history__info-section {
+    margin-bottom: 34px;
+  }
+
+  .mypage-history__info-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .mypage-history__info-section p {
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 6px;
+  }
+
+  .history-detail__order-info {
+    margin-bottom: 70px;
+  }
+
+  .history-detail__row {
+    flex-direction: column;
+  }
+
+  .history-detail__label {
+    width: 100%;
+    padding: 18px 8px;
+    font-size: 18px;
+  }
+
+  .history-detail__value {
+    padding: 16px 20px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .history-detail__resend {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    margin-top: 70px;
+    padding-bottom: 8px;
+  }
+
+  .history-detail__resend-text {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .history-detail__resend-btn {
+    font-size: 18px;
+  }
+
+  .history-detail__voucher-wrap {
+    margin-top: 18px;
+    margin-bottom: 34px;
+  }
+
+  .history-detail__voucher-table th {
+    padding: 18px;
+    font-size: 18px;
+  }
+
+  .history-detail__voucher-table td {
+    padding: 18px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .history-detail__actions {
+    margin-top: 34px;
+  }
+
+  .history-detail__btn-list {
+    width: 100%;
+  }
 }

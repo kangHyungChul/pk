@@ -127,12 +127,12 @@
   color: var(--color-theme-primary); 
 }
 
-/* 목록-페이지네이션 간격 */
+/* 목록·페이지네이션 */
 .notice-list + .pagination {
   margin-top: 40px;
 }
 
-/* 공지 상세 페이지 */
+/* 공지 상세 */
 .notice-detail__head {
   border-top: 1px solid var(--color-theme-primary);
   background-color: var(--color-bg-white);
@@ -308,4 +308,126 @@
   font-size: 18px;
   line-height: 26px;
   color: var(--color-text-main);
+}
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 756px) {
+  .customer__inner {
+    padding: 44px var(--inner-x) 70px;
+  }
+
+  .notice_head {
+    margin-bottom: 56px;
+  }
+
+  .notice_title {
+    margin-bottom: 18px;
+    font-size: 28px;
+  }
+
+  .notice-list__row {
+    gap: 8px;
+    padding: 16px 20px;
+  }
+
+  .notice-list__row-inner {
+    gap: 18px;
+  }
+
+  .notice-list__num {
+    font-size: 14px;
+  }
+
+  .notice_item_title,
+  .notice-list__title-link {
+    font-size: 14px;
+  }
+
+  .notice_date {
+    font-size: 12px;
+  }
+
+  .notice_badge {
+    padding-block: 6px;
+    font-size: 14px;
+  }
+
+  .notice-list__count {
+    margin-bottom: 22px;
+    font-size: 14px;
+  }
+
+  .notice-list + .pagination {
+    margin-top: 34px;
+  }
+
+  .notice-detail__head-inner {
+    gap: 8px;
+    padding: 18px 34px;
+    font-size: 14px;
+  }
+
+  .notice-detail__body {
+    padding: 22px 34px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .notice-detail__body p {
+    margin-bottom: 8px;
+  }
+
+  .notice-detail__actions {
+    margin-top: 52px;
+  }
+
+  .notice-detail__actions .c-btn {
+    min-width: 0;
+    width: 100%;
+  }
+
+  .notice-detail__body,
+  .notice-detail__head-inner {
+    padding-inline: 12px;
+  }
+
+  .faq-tabs {
+    gap: 8px;
+    margin-top: 18px;
+  }
+
+  .faq-tab {
+    padding: 8px 18px;
+    font-size: 16px;
+  }
+
+  .faq__trigger {
+    padding: 16px 20px;
+    min-height: auto;
+    gap: 8px;
+  }
+
+  .faq__q {
+    font-size: 28px;
+  }
+
+  .faq__question {
+    font-size: 16px;
+  }
+
+  .faq__panel {
+    padding: 26px 34px;
+    gap: 8px;
+  }
+
+  .faq__a {
+    font-size: 28px;
+  }
+
+  .faq__answer {
+    font-size: 16px;
+    line-height: 22px;
+  }
 }

@@ -1,4 +1,4 @@
-/* 주문 완료 페이지 */
+/* 주문 완료 */
 
 .result {
   padding: var(--page-gutter);
@@ -10,7 +10,7 @@
   background-color: var(--color-bg-white);
 }
 
-/* 완료 문구  */
+/* 완료 문구 */
 .result__title {
   margin-bottom: 60px;
   font-weight: 700;
@@ -20,7 +20,7 @@
   text-align: center;
 }
 
-/* 결제 정보 카드 */
+/* 결제 정보 */
 .result__card {
   max-width: 860px;
   margin: 0 auto 40px;
@@ -102,7 +102,7 @@
   line-height: 34px;
 }
 
-/* 하단 버튼 영역 (구매내역으로 / 확인) */
+/* 하단 버튼 */
 .result__card-actions {
   display: flex;
   align-items: center;
@@ -116,6 +116,63 @@
   flex: 1;
 }
 
-/* 모바일 */
-@media (max-width: 560px) {
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 756px) {
+  .result__inner {
+    padding-block: 70px 140px;
+  }
+
+  .result__title {
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+
+  .result__card {
+    margin-bottom: 34px;
+  }
+
+  .result__card-inner {
+    padding: 24px 20px;
+  }
+
+  .result__list {
+    gap: 16px;
+  }
+
+  .result__row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+
+  .result__label {
+    flex: none;
+    border: none;
+    padding: 0;
+    font-size: 18px;
+  }
+
+  .result__card-fail {
+    font-size: 20px;
+    line-height: 1.26;
+    gap: 6px;
+  }
+
+  .result__value {
+    text-align: left;
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .result__value--phone {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .result__card-actions {
+    gap: 16px;
+    margin-top: 34px;
+  }
 }

@@ -1,4 +1,4 @@
-/* 회원로그인관련 */
+/* 로그인·회원 */
 
 .users {
   padding: var(--page-gutter);
@@ -154,4 +154,70 @@
 
 .idfind-result__item:has(.idfind-result__input:checked) .idfind-result__radio-icon {
   background: var(--icon-checkbox-checked);
+}
+
+@media (max-width: 756px) {
+  .users__inner {
+    padding: 44px var(--inner-x) 70px;
+  }
+
+  .users__title {
+    margin-bottom: 34px;
+  }
+
+  .users__form {
+    gap: 26px;
+    padding-top: 34px;
+  }
+
+  .users__form .form-title {
+    gap: 8px;
+    margin-bottom: 26px;
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .users__form:has(.form-title) {
+    padding-top: 18px;
+  }
+
+  .users__form .form-group__field {
+    flex: unset;
+  }
+
+  .users__actions {
+    gap: 16px;
+    margin-top: 26px;
+  }
+
+  .users__links {
+    gap: 18px;
+    margin-top: 34px;
+  }
+
+  .users__link {
+    font-size: 18px;
+  }
+
+  .users__link--primary {
+    margin-left: 26px;
+  }
+
+  .users__no-result {
+    padding-block: 52px 34px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .idfind-result__list {
+    gap: 18px;
+  }
+
+  .idfind-result__item {
+    padding: 14px 18px;
+  }
+
+  .idfind-result__id-text {
+    font-size: 16px;
+  }
 }

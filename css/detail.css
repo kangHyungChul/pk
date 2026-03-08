@@ -1,4 +1,4 @@
-/* 상품 상세 페이지 */
+/* 상품 상세 */
 
 .detail {
   padding: var(--page-gutter);
@@ -12,7 +12,7 @@
   margin: 0 auto;
 }
 
-/* 좌측 영역 */
+/* 좌측 */
 .detail__left {
   padding: 50px 40px;
   background: var(--color-bg-white);
@@ -147,7 +147,7 @@
   display: block;
 }
 
-/* 구매 수량 목록 */
+/* 구매 수량 */
 .detail-quantity-list {
   display: flex;
   flex-direction: column;
@@ -184,7 +184,7 @@
   color: var(--color-text-main);
 }
 
-/* 3% 할인 + 하락 아이콘 */
+/* 할인/하락 아이콘 */
 .detail-quantity__discount {
   display: inline-flex;
   align-items: center;
@@ -246,7 +246,7 @@
   background-color: var(--color-gray-100);
 }
 
-/* 수량 가운데: input 텍스트 */
+/* 수량 input */
 .detail-quantity__input {
   flex: 1;
   min-width: 0;
@@ -272,7 +272,7 @@
   outline: none;
 }
 
-/* 수량 뒤: 최대 수량 버튼 */
+/* 최대 수량 버튼 */
 .detail-quantity__max {
   width: 76px;
   height: 40px;
@@ -304,7 +304,7 @@
   border-color: var(--color-gray-200);
 }
 
-/* 결제 금액 요약 */
+/* 결제 요약 */
 .detail__section--summary {
   margin-top: 58px;
 }
@@ -347,7 +347,7 @@
   margin: 0 -4px;
 }
 
-/* 결제 동의 체크박스 */
+/* 결제 동의 */
 .detail-agree {
   display: flex;
   align-items: flex-start;
@@ -381,6 +381,7 @@
 }
 
 .detail-agree__text {
+  flex: 1;
   font-weight: 500;
   font-size: 18px;
   line-height: 26px;
@@ -388,12 +389,12 @@
   cursor: pointer;
 }
 
-/* 결제하기 버튼 */
+/* 결제 버튼 */
 .detail__actions {
   margin-top: 0;
 }
 
-/* 하단: 상품설명 (전체 너비) */
+/* 상품설명 */
 .detail__description {
   margin-top: 60px;
   background: var(--color-bg-white);
@@ -409,17 +410,24 @@
   max-width: 1120px;
 }
 
-/* 반응형 */
-/* @media (max-width: 1200px) {
+@media (max-width: 1200px) {
   .detail__grid {
     grid-template-columns: 1fr;
-    max-width: 582px;
     margin-left: auto;
     margin-right: auto;
   }
+  .detail__left {
+    padding: 30px 20px;
+  }
+  .detail-panel {
+    padding: 20px;
+  }
+  .detail__description {
+    margin-top: 24px;
+  }
 }
 
-@media (max-width: 560px) {
+@media (max-width: 756px) {
   .detail {
     padding: 30px 0 50px;
   }
@@ -428,22 +436,149 @@
     gap: 24px;
   }
 
-  .detail__thumb {
-    height: 240px;
+  .detail__left {
+    padding: 20px 16px;
   }
 
-  .detail-tabs {
-    flex-direction: column;
+  .detail__title {
+    margin-bottom: 18px;
+    font-size: 20px;
+  }
+
+  .detail__thumb {
+    height: 240px;
+    margin-bottom: 26px;
+    padding: 18px;
+  }
+
+  .detail__section-title {
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+
+  .detail__section-title--lg {
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 8px;
+  }
+
+  .detail__section-body {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .detail__section-body p {
+    margin-bottom: 4px;
+  }
+
+  .detail__section-desc {
+    margin-bottom: 18px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .detail-tab {
+    gap: 4px;
+    padding: 8px 18px;
+    font-size: 16px;
+  }
+
+  .detail-tab__badge {
+    padding: 0 8px;
+    font-size: 14px;
+  }
+
+  .detail-panel {
+    padding: 16px;
+  }
+
+  .detail-quantity-list {
+    gap: 18px;
   }
 
   .detail-quantity {
     flex-direction: column;
     align-items: flex-start;
+    gap: 14px;
   }
 
-  .detail__submit {
-    padding: 18px;
+  .detail-quantity__prices {
+    gap: 8px;
+  }
+
+  .detail-quantity__price-old {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .detail-quantity__price {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .detail-quantity__discount {
+    font-size: 14px;
+  }
+
+  .detail-quantity__controls {
+    gap: 8px;
+  }
+
+  .detail-quantity__btn {
     font-size: 18px;
   }
-} */
+
+  .detail-quantity__input {
+    font-size: 18px;
+    line-height: 34px;
+  }
+
+  .detail-quantity__max {
+    font-size: 18px;
+  }
+
+  .detail__section--summary {
+    margin-top: 50px;
+  }
+
+  .detail__section--summary .detail__section-title {
+    margin-bottom: 26px;
+  }
+
+  .detail-summary {
+    gap: 18px;
+  }
+
+  .detail-summary__row {
+    font-size: 16px;
+  }
+
+  .detail-summary__row span:last-child {
+    font-size: 18px;
+  }
+
+  .detail-summary__row--total {
+    font-size: 18px;
+  }
+
+  .detail-agree {
+    gap: 8px;
+    margin: 36px 0 16px;
+    padding: 14px 18px;
+  }
+
+  .detail-agree__text {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .detail__description {
+    margin-top: 36px;
+    padding: 16px;
+  }
+
+  .detail__description .detail__section-title {
+    margin-bottom: 18px;
+  }
+}
 

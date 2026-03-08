@@ -1,4 +1,4 @@
-/* 정책 페이지 */
+/* 정책 */
 .policy {
   padding: var(--page-gutter);
 }
@@ -44,7 +44,7 @@
   margin-bottom: 26px;
 }
 
-/* 조/항 제목 */
+/* 조·항 제목 */
 .policy__section {
   margin-bottom: 26px;
 }
@@ -61,7 +61,7 @@
   margin-bottom: 8px;
 }
 
-/* 조/항 본문 */
+/* 조·항 본문 */
 .policy__section-body {
   font-weight: 400;
   font-size: 18px;
@@ -80,4 +80,50 @@
 .policy__section-body strong {
   font-weight: 500;
   color: var(--color-text-main);
+}
+
+@media (max-width: 756px) {
+  .policy__inner {
+    padding: 44px 20px 70px;
+  }
+
+  .policy__title {
+    margin-bottom: 44px;
+    font-size: 28px;
+  }
+
+  .policy__date {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .policy__body {
+    margin-top: 14px;
+    padding-top: 34px;
+  }
+
+  .policy__subtitle {
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 22px;
+  }
+
+  .policy__section {
+    margin-bottom: 22px;
+  }
+
+  .policy__section-title {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 6px;
+  }
+
+  .policy__section-body {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .policy__section-body p {
+    margin-bottom: 4px;
+  }
 }

@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>산출물 정리 - 핀왕</title>
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/common.css">
+  <style>
+    .deliverable { max-width: 1400px; margin: 0 auto; padding: 40px 20px 80px; }
+    .deliverable h1 { font-size: 28px; margin-bottom: 24px; }
+    .deliverable__meta { font-size: 14px; color: var(--color-gray-400); margin-bottom: 32px; }
+    .deliverable table { width: 100%; border-collapse: collapse; font-size: 14px; }
+    .deliverable th, .deliverable td { border: 1px solid var(--color-bg-line); padding: 12px 16px; text-align: left; vertical-align: top; }
+    .deliverable th { background: var(--color-gray-100); font-weight: 600; }
+    .deliverable tr:hover td { background: var(--color-theme-sub-1); }
+    .deliverable a { color: var(--color-theme-primary); }
+    .deliverable a:hover { text-decoration: underline; }
+    .deliverable .note { font-size: 13px; color: var(--color-gray-500); line-height: 1.5; }
+    .deliverable .tag { display: inline-block; padding: 2px 8px; background: var(--color-gray-200); border-radius: 4px; font-size: 12px; margin-right: 4px; margin-bottom: 4px; }
+  </style>
+</head>
+<body>
+
+  <main class="deliverable">
+    <h1>산출물 정리</h1>
+
+    <table>
+      <thead>
+        <tr>
+          <th>No</th>
+          <th>파일명</th>
+          <th>링크</th>
+          <th>용도</th>
+          <th>CSS 파일</th>
+          <th>JS 파일</th>
+          <th>비고</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>index.html</td>
+          <td><a href="index.html">index.html</a></td>
+          <td>메인 페이지 (배너, 상품권 목록, 공지사항, 이용 가이드)</td>
+          <td>tokens.css, common.css, swiper-bundle.min.css, main.css</td>
+          <td>swiper-bundle.min.js, main.js, common.js</td>
+          <td class="note">—</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>detail.html</td>
+          <td><a href="detail.html">detail.html</a></td>
+          <td>상품 상세 / 결제 (상품 정보, 수량, 결제 수단 탭, 상품설명)</td>
+          <td>tokens.css, common.css, detail.css</td>
+          <td>detail.js, common.js</td>
+          <td class="note">—</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>result.html</td>
+          <td><a href="result.html">result.html</a></td>
+          <td>주문 완료 (결제 성공 시 결제 정보 및 구매내역으로/확인 버튼)</td>
+          <td>tokens.css, common.css, result.css</td>
+          <td>common.js</td>
+          <td class="note">동일 파일 내 다른 콘텐츠(주석): 주문실패 블록(결제 실패 문구, 실패사유, 이전으로/확인 버튼).</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>login.html</td>
+          <td><a href="login.html">login.html</a></td>
+          <td>로그인 (아이디/비밀번호 입력, 아이디·비밀번호 찾기, 회원가입 링크)</td>
+          <td>tokens.css, common.css, users.css</td>
+          <td>common.js</td>
+          <td class="note">—</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>signup_agree.html</td>
+          <td><a href="signup_agree.html">signup_agree.html</a></td>
+          <td>회원가입 1단계 – 약관동의 (필수/선택 약관, 전체 동의, 취소/회원가입)</td>
+          <td>tokens.css, common.css, signup.css</td>
+          <td>signup.js, common.js</td>
+          <td class="note">—</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>signup_infor.html</td>
+          <td><a href="signup_infor.html">signup_infor.html</a></td>
+          <td>회원가입 2단계 – 정보입력 (본인인증 후 정보 입력 폼)</td>
+          <td>tokens.css, common.css, signup.css</td>
+          <td>common.js</td>
+          <td class="note">—</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>signup_confirm.html</td>
+          <td><a href="signup_confirm.html">signup_confirm.html</a></td>
+          <td>회원가입 – 본인인증 (요건 만족 후 disabled 해제)</td>
+          <td>tokens.css, common.css, signup.css</td>
+          <td>common.js</td>
+          <td class="note">—</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>signup_complete.html</td>
+          <td><a href="signup_complete.html">signup_complete.html</a></td>
+          <td>회원가입 완료 (안내 문구, 상품권 구매하러 가기 버튼)</td>
+          <td>tokens.css, common.css, signup.css</td>
+          <td>common.js</td>
+          <td class="note">—</td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>idfind.html</td>
+          <td><a href="idfind.html">idfind.html</a></td>
+          <td>아이디 찾기 (이름·생년월일·휴대폰 등 입력)</td>
+          <td>tokens.css, common.css, users.css</td>
+          <td>common.js</td>
+          <td class="note">—</td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td>idfind_result.html</td>
+          <td><a href="idfind_result.html">idfind_result.html</a></td>
+          <td>아이디 찾기 결과 (찾은 아이디 목록, 비밀번호 찾기/로그인 링크)</td>
+          <td>tokens.css, common.css, users.css</td>
+          <td>common.js</td>
+          <td class="note">—</td>
+        </tr>
+        <tr>
+          <td>11</td>
+          <td>pwfind.html</td>
+          <td><a href="pwfind.html">pwfind.html</a></td>
+          <td>비밀번호 찾기 (아이디·이름·휴대폰 등 입력 후 임시 비밀번호 발송)</td>
+          <td>tokens.css, common.css, users.css</td>
+          <td>common.js</td>
+          <td class="note">—</td>
+        </tr>
+        <tr>
+          <td>12</td>
+          <td>find_no_result.html</td>
+          <td><a href="find_no_result.html">find_no_result.html</a></td>
+          <td>찾기 결과 없음 (가입한 아이디 확인 안 됨 등 안내 + 다시 찾기/회원가입)</td>
+          <td>tokens.css, common.css, users.css</td>
+          <td>common.js</td>
+          <td class="note">동일 파일 내 다른 콘텐츠(주석): 비밀번호 찾기 임시 비밀번호 발송 완료 화면, 비밀번호 찾기 없음 화면.</td>
+        </tr>
+        <tr>
+          <td>13</td>
+          <td>notice_list.html</td>
+          <td><a href="notice_list.html">notice_list.html</a></td>
+          <td>공지사항 목록 (제목, 번호·제목·등록일 테이블형, 페이지네이션)</td>
+          <td>tokens.css, common.css, customer.css</td>
+          <td>common.js</td>
+          <td class="note">—</td>
+        </tr>
+        <tr>
+          <td>14</td>
+          <td>notice_detail.html</td>
+          <td><a href="notice_detail.html">notice_detail.html</a></td>
+          <td>공지사항 상세 (제목, 본문, 목록 버튼)</td>
+          <td>tokens.css, common.css, customer.css</td>
+          <td>common.js</td>
+          <td class="note">—</td>
+        </tr>
+        <tr>
+          <td>15</td>
+          <td>faq.html</td>
+          <td><a href="faq.html">faq.html</a></td>
+          <td>FAQ (탭 + 아코디언 형태 Q&amp;A)</td>
+          <td>tokens.css, common.css, customer.css</td>
+          <td>faq.js, common.js</td>
+          <td class="note">—</td>
+        </tr>
+        <tr>
+          <td>16</td>
+          <td>policy.html</td>
+          <td><a href="policy.html">policy.html</a></td>
+          <td>정책 페이지 – 개인정보처리방침 (노출), 서비스이용약관 (주석)</td>
+          <td>tokens.css, common.css, policy.css</td>
+          <td>common.js</td>
+          <td class="note">동일 파일 내 다른 콘텐츠(주석): 서비스이용약관 섹션 전체(제 1조 목적, 제 2조 용어의 정의 등).</td>
+        </tr>
+        <tr>
+          <td>17</td>
+          <td>guide_buy.html</td>
+          <td><a href="guide_buy.html">guide_buy.html</a></td>
+          <td>이용 가이드 – 구매안내 (스텝형 이미지+설명)</td>
+          <td>tokens.css, common.css, guide.css</td>
+          <td>common.js</td>
+          <td class="note">—</td>
+        </tr>
+        <tr>
+          <td>18</td>
+          <td>guide_confirm.html</td>
+          <td><a href="guide_confirm.html">guide_confirm.html</a></td>
+          <td>이용 가이드 – 상품권 확인 (PIN·유효기간 확인 방법)</td>
+          <td>tokens.css, common.css, guide.css</td>
+          <td>common.js</td>
+          <td class="note">—</td>
+        </tr>
+        <tr>
+          <td>19</td>
+          <td>guide_use.html</td>
+          <td><a href="guide_use.html">guide_use.html</a></td>
+          <td>이용 가이드 – 사용처 (상품권별 사용처 안내)</td>
+          <td>tokens.css, common.css, guide.css</td>
+          <td>common.js</td>
+          <td class="note">—</td>
+        </tr>
+        <tr>
+          <td>20</td>
+          <td>mypage_modify.html</td>
+          <td><a href="mypage_modify.html">mypage_modify.html</a></td>
+          <td>회원정보 수정 (아이디·이름·휴대폰·비밀번호·마케팅 수신·회원탈퇴, 저장)</td>
+          <td>tokens.css, common.css, mypage.css</td>
+          <td>common.js</td>
+          <td class="note">동일 파일 내 다른 콘텐츠(주석): 휴대폰 번호 변경 모달(본인인증/변경 폼).</td>
+        </tr>
+        <tr>
+          <td>21</td>
+          <td>mypage_pw.html</td>
+          <td><a href="mypage_pw.html">mypage_pw.html</a></td>
+          <td>비밀번호 변경 (현재 비밀번호, 새 비밀번호, 안내 문구, 변경 버튼)</td>
+          <td>tokens.css, common.css, mypage.css</td>
+          <td>common.js</td>
+          <td class="note">—</td>
+        </tr>
+        <tr>
+          <td>22</td>
+          <td>mypage_withdrawal.html</td>
+          <td><a href="mypage_withdrawal.html">mypage_withdrawal.html</a></td>
+          <td>회원탈퇴 (탈퇴 시 삭제 안내, 아이디·생년월일·휴대폰·비밀번호·탈퇴사유·확인 체크, 탈퇴/취소)</td>
+          <td>tokens.css, common.css, mypage.css</td>
+          <td>common.js</td>
+          <td class="note">—</td>
+        </tr>
+        <tr>
+          <td>23</td>
+          <td>mypage_history.html</td>
+          <td><a href="mypage_history.html">mypage_history.html</a></td>
+          <td>구매내역 (주문일시·상품·금액·결제방법·상세 링크, 페이지네이션)</td>
+          <td>tokens.css, common.css, mypage.css</td>
+          <td>common.js</td>
+          <td class="note">—</td>
+        </tr>
+        <tr>
+          <td>24</td>
+          <td>mypage_history-detail.html</td>
+          <td><a href="mypage_history-detail.html">mypage_history-detail.html</a></td>
+          <td>구매내역 상세 (주문 정보 테이블, 재발송 안내, 상품권 상세 테이블, 목록보기)</td>
+          <td>tokens.css, common.css, mypage.css</td>
+          <td>common.js</td>
+          <td class="note">—</td>
+        </tr>
+        <tr>
+          <td>25</td>
+          <td>announcement.html</td>
+          <td><a href="announcement.html">announcement.html</a></td>
+          <td>시스템 점검 안내 (점검 일자·문의 안내)</td>
+          <td>tokens.css, common.css, announcement.css</td>
+          <td>—</td>
+          <td class="note">동일 파일 내 다른 콘텐츠(주석): 서비스 종료 안내 블록(핀왕 서비스 종료 문구, 문의 이메일).</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p class="deliverable__meta" style="margin-top: 32px;">공통: tokens.css, common.css는 모든 페이지에서 사용. font.css는 common.css에서 import.</p>
+  </main>
+
+</body>
+</html>

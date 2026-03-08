@@ -33,7 +33,7 @@
   color: var(--color-gray-300);
 }
 
-/* 2, 3, 4번 li 좌측에 화살표(가상요소), 색상은 .is-current 하나로 통일 */
+/* 단계 화살표 */
 .signup-agree__step-item:not(:first-child)::before {
   padding-inline: 10px;
   content: '\00a0>\00a0';
@@ -50,7 +50,7 @@
   margin-bottom: 40px;
 }
 
-/* 약관 제목 행: label로 제목+체크박스 묶음, 클릭 시 체크 토글 */
+/* 약관 제목 행 */
 .signup-agree__head {
   display: flex;
   align-items: flex-start;
@@ -69,7 +69,7 @@
   flex: 1;
 }
 
-/* 체크박스: input 비표시, 아이콘만 표시 */
+/* 체크박스 아이콘 */
 .signup-agree__head .signup-agree__check-icon,
 .signup-agree__all-label .signup-agree__check-icon {
   flex-shrink: 0;
@@ -103,7 +103,7 @@
   background: var(--icon-checkbox-checked);
 }
 
-/* 약관 본문 박스 */
+/* 약관 본문 */
 .signup-agree__content {
   padding: 30px;
   background-color: var(--color-bg-white);
@@ -156,7 +156,7 @@
   margin: 0;
 }
 
-/* 버튼 영역 */
+/* 버튼 */
 .signup-agree__actions {
   display: flex;
   align-items: center;
@@ -169,7 +169,7 @@
   flex: 1;
 }
 
-/* 본인인증 / 정보입력 */
+/* 본인인증·정보입력 */
 .signup-section {
   max-width: 860px;
   margin: 0 auto;
@@ -281,4 +281,133 @@
 
 .signup-complete__actions .c-btn {
   min-width: 500px;
+}
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 756px) {
+  .signup__inner {
+    padding: 44px var(--inner-x) 70px;
+  }
+
+  .signup-agree__steps {
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 52px;
+  }
+
+  .signup-agree__step-list {
+    font-size: 20px;
+    row-gap: 4px;
+  }
+
+  .signup-agree__block {
+    margin-bottom: 34px;
+  }
+
+  .signup-agree__head {
+    gap: 8px;
+    margin-bottom: 18px;
+    padding-bottom: 8px;
+  }
+
+  .signup-agree__title {
+    font-size: 20px;
+  }
+
+  .signup-agree__content {
+    padding: 26px;
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .signup-agree__content p {
+    margin-bottom: 8px;
+  }
+
+  .signup-agree__all {
+    margin-top: 18px;
+    padding: 0 18px;
+  }
+
+  .signup-agree__all-text {
+    font-size: 18px;
+  }
+
+  .signup-agree__actions {
+    gap: 16px;
+    margin-top: 52px;
+  }
+
+  .signup-section__head {
+    margin-bottom: 34px;
+  }
+
+  .signup-section__title {
+    padding-bottom: 8px;
+  }
+
+  .signup-section__desc {
+    margin-top: 18px;
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .signup-section__form {
+    gap: 26px;
+  }
+
+  .signup-section__form + .signup-section__form {
+    margin-top: 34px;
+    padding-block: 34px;
+  }
+
+  .signup-section__actions {
+    gap: 16px;
+    margin-top: 52px;
+  }
+
+  .signup-complete {
+    padding-block: 34px;
+  }
+
+  .signup-complete__title {
+    margin-top: 44px;
+    font-size: 28px;
+  }
+
+  .signup-complete__desc {
+    margin-top: 26px;
+    font-size: 20px;
+  }
+
+  .signup-complete__benefits {
+    margin-top: 40px;
+  }
+
+  .signup-complete__list {
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 14px;
+  }
+
+  .signup-complete__list li {
+    margin-bottom: 4px;
+  }
+
+  .signup-complete__cta {
+    margin-top: 22px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .signup-complete__actions {
+    margin-top: 52px;
+  }
+
+  .signup-complete__actions .c-btn {
+    min-width: 0;
+    width: 100%;
+  }
 }

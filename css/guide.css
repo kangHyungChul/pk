@@ -1,4 +1,4 @@
-/* 이용가이드 */
+/* 이용 가이드 */
 .guide {
   padding: var(--page-gutter);
 }
@@ -26,7 +26,7 @@
   line-height: 34px;
 }
 
-/* 스텝형 레이아웃 */
+/* 스텝 레이아웃 */
 .guide-layout {
   display: flex;
   flex-direction: column;
@@ -121,7 +121,7 @@
   margin-bottom: 0;
 }
 
-/* 단계 보조 문구 */
+/* 단계 보조 */
 .guide-step__desc {
   font-weight: 400;
   font-size: 20px;
@@ -130,7 +130,7 @@
   margin: 0;
 }
 
-/* 단계 여러 줄 텍스트 */
+/* 단계 여러 줄 */
 .guide-step__lines {
   font-weight: 500;
   font-size: 22px;
@@ -146,15 +146,81 @@
   margin-bottom: 0;
 }
 
-/* 반응형 */
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
+  .guide-step {
+    gap: 16px;
+  }
+  .guide-step__content .c-btn {
+    margin-top: 16px;
+  }
+
+  .guide-step__media {
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 756px) {
+  .guide__inner {
+    padding: 44px var(--inner-x) 70px;
+  }
+
+  .guide-head {
+    margin-bottom: 46px;
+  }
+
+  .guide-head__title {
+    margin-bottom: 26px;
+  }
+
+  .guide-head__subtitle {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .guide-steps {
+    gap: 26px;
+  }
+
   .guide-step {
     flex-direction: column;
-    min-height: 0;
   }
 
   .guide-step__media {
     width: 100%;
-    max-width: 624px;
+    max-width: unset;
+    height: 200px;
+  }
+
+  .guide-step__body {
+    gap: 6px;
+  }
+
+  .guide-step__num {
+    font-size: 16px;
+  }
+
+  .guide-step__content .c-btn {
+    margin-top: 26px;
+    padding-inline: 34px;
+  }
+
+  .guide-step__title {
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 4px;
+  }
+
+  .guide-step__desc {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .guide-step__lines {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .guide-step__lines p {
+    margin-bottom: 4px;
   }
 }

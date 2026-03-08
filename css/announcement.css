@@ -16,7 +16,7 @@ body {
     background-color: var(--color-bg-white);
 }
 
-/* 상단 배경 이미지 영역 */
+/* 상단 배경 */
 .announcement__header {
     height: 400px;
     background: url('../assets/img-pinwang-system_settings.png') center top / auto 100% no-repeat;
@@ -46,7 +46,7 @@ body {
     color: var(--color-text-main);
 }
 
-/* 본문 텍스트 */
+/* 본문 */
 .announcement__content {
     font-size: 30px;
     line-height: 40px;
@@ -59,4 +59,33 @@ body {
 
 .announcement__content p:last-child {
     margin-bottom: 0;
+}
+
+@media (max-width: 756px) {
+    .announcement {
+        padding: 18px;
+    }
+
+    .announcement__header {
+        height: 200px;
+    }
+
+    .announcement__body {
+        padding: 32px 16px 50px;
+    }
+
+    .announcement__title {
+        font-size: 40px;
+        line-height: 52px;
+        margin-bottom: 34px;
+    }
+
+    .announcement__content {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .announcement__content p {
+        margin-bottom: 26px;
+    }
 }
