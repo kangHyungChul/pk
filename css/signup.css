@@ -243,6 +243,7 @@
 .signup-complete__desc {
   margin-top: 30px;
   font-size: 22px;
+  line-height: 1.45;
 }
 
 .signup-complete__benefits {

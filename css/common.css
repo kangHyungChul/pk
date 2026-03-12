@@ -13,6 +13,9 @@ html {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   font-family: var(--font-family-base);
   font-size: 16px;
   line-height: 1;
@@ -77,6 +80,9 @@ ol {
 }
 
 /* 공통 */
+main {
+  flex: 1;
+}
 .page-width {
   max-width: 1200px;
   margin: 0 auto;
@@ -106,12 +112,12 @@ ol {
 }
 .c-btn--white {
   background-color: var(--color-bg-white);
-  color: var(--color-text-main);
-  border: 1px solid var(--color-bg-line);
+  color: var(--color-gray-400);
+  border: 1px solid var(--color-gray-300);
 }
 .c-btn--white:hover:not(:disabled) {
   background-color: var(--color-gray-100);
-  border-color: var(--color-gray-200);
+  border-color: var(--color-gray-300);
 }
 .c-btn:disabled,
 .c-btn.is-disabled {

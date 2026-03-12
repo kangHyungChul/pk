@@ -146,7 +146,7 @@
 .notice-detail__body {
   padding: 24px 40px;
   font-size: 18px;
-  line-height: 26px;
+  line-height: 1.45;
   color: var(--color-text-main);
   border-top: 1px solid var(--color-bg-line);
   border-bottom: 1px solid var(--color-bg-line);
@@ -279,7 +279,7 @@
   gap: 10px;
   padding: 30px 40px;
   background-color: var(--color-theme-sub-1);
-  border-top: 1px solid var(--color-bg-line);
+  border-top: 1px solid var(--color-theme-primary);
 }
 
 .faq__panel[hidden] {
@@ -367,7 +367,6 @@
   .notice-detail__body {
     padding: 22px 34px;
     font-size: 16px;
-    line-height: 22px;
   }
 
   .notice-detail__body p {
