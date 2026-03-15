@@ -256,15 +256,6 @@
   font-size: 22px;
   line-height: 32px;
   color: var(--color-text-main);
-  margin-bottom: 16px;
-}
-
-.signup-complete__list li {
-  margin-bottom: 4px;
-}
-
-.signup-complete__list li:last-child {
-  margin-bottom: 0;
 }
 
 .signup-complete__cta {
@@ -391,11 +382,6 @@
   .signup-complete__list {
     font-size: 20px;
     line-height: 28px;
-    margin-bottom: 14px;
-  }
-
-  .signup-complete__list li {
-    margin-bottom: 4px;
   }
 
   .signup-complete__cta {

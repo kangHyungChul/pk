@@ -144,6 +144,49 @@
   margin-bottom: 0;
 }
 
+/* 사용처 */
+.guide-use {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 72px 30px;
+}
+.guide-use__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 30px;
+}
+.guide-use__item .c-btn {
+  margin-top: auto;
+}
+.guide-use__thumb {
+  max-width: 184px;
+}
+.guide-use__thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.guide-use__body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 6px;
+  text-align: center;
+}
+.guide-use__title {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 32px;
+}
+.guide-use__desc {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+}
+
 @media (max-width: 1200px) {
   .guide-step {
     gap: 16px;
@@ -222,5 +265,21 @@
 
   .guide-step__lines p {
     margin-bottom: 4px;
+  }
+
+  .guide-use {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px 24px;
+  }
+  .guide-use__item {
+    gap: 16px;
+  }
+  .guide-use__title {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .guide-use__desc {
+    font-size: 18px;
+    line-height: 26px;
   }
 }

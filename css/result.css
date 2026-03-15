@@ -110,7 +110,11 @@
 }
 
 .result__card-actions .c-btn {
-  flex: 1;
+  flex: 0 1 50%;
+}
+.result__card-actions .c-btn:first-child {
+  flex: 0 1 auto;
+  margin-right: auto;
 }
 
 @media (max-width: 1200px) {
